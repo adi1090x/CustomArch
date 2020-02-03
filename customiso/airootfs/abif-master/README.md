@@ -1,5 +1,5 @@
 
-#Arch Base Installation Framework 2.x series
+## Arch Base Installation Framework 2.x series
 A generic *offline* installer for Arch-based ISOs. Feel free to use it for your distribution.
 
 
@@ -12,7 +12,7 @@ A generic *offline* installer for Arch-based ISOs. Feel free to use it for your 
 + Built-in error detection
 
 
-#Basic Assumptions
+## Basic Assumptions
 + dialog *must* be installed
 + Boot menus assume Grub, Syslinux, and systemd-boot are installed
 + Default partitioning tools are gparted, cfdisk, and parted
