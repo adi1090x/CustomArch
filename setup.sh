@@ -192,6 +192,11 @@ echo -e $Y" [*] eDEX-UI Added. "$C
 echo
 fi
 
+echo
+echo -e $Y" [*] Making owner ROOT to avoid problems with false permissions."$C
+sudo chown -R root:root $DIR/customiso/
+echo
+
 echo -e $Y" [*] Cleaning Up... "$C
 cd $DIR/pkgs
 rm -rf $PR1 $PR2 $PR3 $PR4 $PR5 $PR6 $PR7 $PR8 $PR9 $PR10
