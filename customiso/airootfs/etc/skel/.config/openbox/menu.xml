@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/  file:///usr/share/openbox/menu.xsd">
+  <menu id="root-menu" title="Menu" label="Openbox 3">
+<!--	<separator label="Main Menu"/>  -->
+		<item label="Terminal Emulator">
+			<action name="Execute">
+				<command>termite</command>
+			</action>
+		</item>
+		<item label="Web Browser">
+			<action name="Execute">
+				<command>firefox</command>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
+		<item label="Text Editor">
+			<action name="Execute">
+				<command>geany</command>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="obmenu-generator" id="pipe-714053" label="Applications"/>
+		<menu id="root-menu-8365" label="Screenshot">
+			<item label="Screenshot Now">
+				<action name="Execute">
+					<execute>shotnow</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 5">
+				<action name="Execute">
+					<execute>shotin5</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 10">
+				<action name="Execute">
+					<execute>shotin10</execute>
+				</action>
+			</item>
+			<item label="Screenshot Area">
+				<action name="Execute">
+					<execute>shotArea</execute>
+				</action>
+			</item>
+			<item label="Screenshot Window">
+				<action name="Execute">
+					<execute>shotWindow</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu execute="ob-places-pipemenu --recent ~/" id="pipe-placesmenu" label="Places"/>
+		<menu execute="ob-recent-files-pipemenu" id="pipe-164328" label="Recent Files"/>
+		<menu id="preferences" label="Preferences">
+			<menu id="obConfig" label="Openbox">
+				<item label="Settings GUI">
+					<action name="Execute">
+						<command>obconf</command>
+					</action>
+				</item>
+				<item label="Menu GUI">
+					<action name="Execute">
+						<command>obmenu</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/menu.xml</command>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/rc.xml</command>
+					</action>
+				</item>
+				<item label="Edit autostart">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/autostart</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Openbox Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Openbox Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu execute="ob-compositor" id="CompositingPipeMenu" label="Compton"/>
+			<menu execute="ob-polybar-pipemenu" id="PolybarPipeMenu" label="Polybar"/>
+			<menu execute="ob-tint2-pipemenu" id="TintPipeMenu" label="Tint2"/>
+			<separator/>
+			<item label="Wallpaper/Background">
+				<action name="Execute">
+					<command>nitrogen</command>
+				</action>
+			</item>
+			<item label="Appearance Settings">
+				<action name="Execute">
+					<command>lxappearance</command>
+				</action>
+			</item>
+			<separator/>
+			<item label="Power Settings">
+				<action name="Execute">
+					<command>xfce4-power-manager</command>
+				</action>
+			</item>
+			<item label="Audio Settings">
+				<action name="Execute">
+					<command>pavucontrol</command>
+				</action>
+			</item>
+			<item label="Settings Manager">
+				<action name="Execute">
+					<command>xfce4-settings-manager</command>
+				</action>
+			</item>
+		</menu>
+		<menu execute="ob-kb-pipemenu" id="keybinds" label="Keybinds"/>
+		<separator/>
+		<item label="Lock Screen">
+			<action name="Execute">
+				<command>i3lock</command>
+			</action>
+		</item>
+		<menu id="obExit" label="Exit Openbox">
+				<item label="Logout">
+					<action name="Execute">
+						<command>openbox --exit</command>
+					</action>
+				</item>
+				<item label="Suspend">
+					<action name="Execute">
+						<command>systemctl suspend</command>
+					</action>
+				</item>
+				<item label="Reboot">
+					<action name="Execute">
+						<command>systemctl reboot</command>
+					</action>
+				</item>
+				<item label="Shutdown">
+					<action name="Execute">
+						<command>systemctl poweroff</command>
+					</action>
+				</item>
+		</menu>
+<!--		<item label="Exit Openbox">
+			<action name="Execute">
+				<command>~/.config/rofi/scripts/powermenu.sh</command>
+			</action>
+		</item>  -->
+	</menu>
+</openbox_menu>
+<!-- vim:sw=2
+-->

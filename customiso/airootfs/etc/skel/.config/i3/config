@@ -1,0 +1,168 @@
+# set modifier
+set $super Mod4
+set $alt Mod1
+
+# set font
+font pango: Noto Sans 8
+
+# Use Mouse+$super to drag floating windows to their wanted position
+floating_modifier $super
+
+#autostart
+exec --no-startup-id hsetroot -center ~/.config/i3/wallpaper.jpg
+exec --no-startup-id xsettingsd &
+exec --no-startup-id compton -b
+exec --no-startup-id xfce4-power-manager &
+exec_always --no-startup-id "dunst -config ~/.config/dunst/dunstrc.i3 &"
+exec_always --no-startup-id "mpd"
+exec --no-startup-id "sleep 3 && /usr/local/bin/about.sh"
+
+# start a terminal
+bindsym $super+Return exec "termite -c ~/.config/termite/config.i3"
+
+# start dmenu (a program launcher)
+bindsym $super+d exec rofi -show drun -drun-display-format "{name}" -theme ~/.config/rofi/themes/search-i3.rasi
+bindsym $super+Shift+d exec rofi -config ~/.config/rofi/themes/config.simple -show drun -display-drun 'Apps ' -drun-display-format '{name}' -padding 18 -width 30 -location 0 -lines 10 -columns 2 -show-icons -icon-theme 'Papirus' -font 'Noto Sans 8'
+
+# common apps keybinds
+bindsym Print exec "scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'"
+bindsym $super+l exec i3lock
+bindsym $super+w exec firefox;workspace 2;focus
+bindsym $super+Shift+w exec --no-startup-id "firefox --private-window";workspace 2;focus
+bindsym $super+e exec pcmanfm
+
+# Audio
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -Mq set Master,0 5%+ unmute && pkill dunst && i3dunst && notify-send -u low 'Volume Rise ' $(volume)"
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -Mq set Master,0 5%- unmute && pkill dunst && i3dunst && notify-send -u low 'Volume Down ' $(volume)"
+bindsym XF86AudioMute exec --no-startup-id "pamixer -t"
+
+# Brightness
+
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10 && pkill dunst && i3dunst && notify-send -u low 'Brightness Inc' $(blight)"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10 && pkill dunst && i3dunst && notify-send -u low 'Brightness Dec' $(blight)" 
+
+# Misc
+bindsym $super+Shift+t exec --no-startup-id "termite -c .config/termite/config.i3 -e htop -t htop"
+bindsym $super+Shift+p exec --no-startup-id "termite -c .config/termite/config.i3 -r 'filemanager' -t 'ranger' -e ranger"
+bindsym $super+x exec --no-startup-id "~/.config/rofi/scripts/powermenu-i3.sh"
+bindsym $super+m exec --no-startup-id "~/.config/rofi/scripts/mpdmenu.sh"
+bindsym $super+a exec --no-startup-id "~/.config/rofi/scripts/appsmenu.sh"
+bindsym $super+z exec --no-startup-id "~/.config/rofi/scripts/scrotmenu.sh"
+bindsym $super+n exec --no-startup-id "~/.config/rofi/scripts/networkmenu.py"
+bindsym $super+i exec --no-startup-id "~/.config/rofi/scripts/i3layoutmenu.sh"
+
+# kill focused window
+bindsym $super+c kill
+bindsym $alt+F4 kill
+
+# change focus
+bindsym $super+Left focus left
+bindsym $super+Down focus down
+bindsym $super+Up focus up
+bindsym $super+Right focus right
+bindsym $super+Tab focus right
+bindsym $super+Shift+Tab focus right
+
+# move focused window
+bindsym $super+Shift+Left move left
+bindsym $super+Shift+Down move down
+bindsym $super+Shift+Up move up
+bindsym $super+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $super+h split h
+
+# split in vertical orientation
+bindsym $super+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# change container layout split
+bindsym $super+s layout toggle split
+
+# toggle tiling / floating
+bindsym $super+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $super+Shift+space focus mode_toggle
+
+# switch to workspace
+bindsym $alt+Control+Right workspace next
+bindsym $alt+Control+Left workspace prev
+bindsym $super+1 workspace 1
+bindsym $super+2 workspace 2
+bindsym $super+3 workspace 3
+bindsym $super+4 workspace 4
+bindsym $super+5 workspace 5
+bindsym $super+6 workspace 6
+bindsym $super+7 workspace 7
+bindsym $super+8 workspace 8
+
+# move focused container to workspace
+bindsym $super+Shift+1 move container to workspace 1
+bindsym $super+Shift+2 move container to workspace 2
+bindsym $super+Shift+3 move container to workspace 3
+bindsym $super+Shift+4 move container to workspace 4
+bindsym $super+Shift+5 move container to workspace 5
+bindsym $super+Shift+6 move container to workspace 6
+bindsym $super+Shift+7 move container to workspace 7
+bindsym $super+Shift+8 move container to workspace 8
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $super+Shift+r restart
+bindsym $super+Shift+C reload
+
+# exit i3
+#bindsym $super+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym Return mode "default"
+}
+bindsym $super+r mode "resize"
+
+# panel
+bar {
+        colors {
+        background #141c21
+        statusline #141c21
+        separator #4b5262
+
+        # colour of border, background, and text
+        focused_workspace       #141c21 #d42434 #d8dee8
+        active_workspace        #141c21 #141c21 #d8dee8
+        inactive_workspace      #141c21 #141c21 #d8dee8
+        urgent_workspacei       #141c21 #287ADD #141c21
+    }
+        status_command i3status
+}
+
+# window rules, you can find the window class using xprop
+for_window [class=".*"] border pixel 4
+assign [class=termite] 1
+assign [class=Firefox|Transmission-gtk] 2
+assign [class=Thunar|File-roller] 3
+assign [class=Geany|Evince|Gucharmap|Soffice|libreoffice*] 4
+assign [class="(?i)Audacity|mplayer|Vlc|mpv|Ghb|Xfburn|Gimp*|Inkscape"] 5
+assign [class=Lxappearance|System-config-printer.py|Lxtask|GParted|Pavucontrol|Exo-helper*|Lxrandr|Arandr] 6
+assign [class="(?i)pcmanfm"] 3
+assign [title="ranger"] 3
+assign [title="htop"] 8
+assign [title="eDEX-UI"] 7
+assign [window_role="browser"] 2
+for_window [class="(?i)URxvt|polybar|xfd|mplayer|xfce4-terminal|Viewnior|feh|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol|pulseaudio-equalizer"] floating enable
+for_window [class=URxvt|xfce4-terminal|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
+for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
+
+# colour of border, background, text, indicator, and child_border
+client.focused              #d42434 #141c21 #d8dee8 #d42434 #d8dee8
+client.focused_inactive     #141c21 #141c21 #d8dee8 #141c21 #141c21
+client.unfocused            #141c21 #141c21 #d8dee8 #141c21 #141c21
+client.urgent               #141c21 #141c21 #d8dee8 #141c21 #141c21
+client.placeholder          #141c21 #141c21 #d8dee8 #141c21 #141c21
+client.background           #141c21

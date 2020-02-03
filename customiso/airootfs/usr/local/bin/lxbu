@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xbacklight -inc 10 && pkill dunst && lxdunst && notify-send -u low 'Brightness Inc' $(blight)

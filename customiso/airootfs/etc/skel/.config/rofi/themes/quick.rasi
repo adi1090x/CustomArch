@@ -1,0 +1,73 @@
+configuration {
+  cycle:              true;
+  hide-scrollbar:     true;
+  disable-history:    false;
+  modi:               "drun";
+  display-drun:       "apps";
+  columns: 3;
+  lines: 3;
+  location: 1;
+  width: 32;
+  lines: 3;  
+  yoffset: 40;
+  xoffset: 10;
+}
+
+/*== Colors =================================*/
+* {
+  accent:           #ffbf00;
+  background:       #1c1c1c;
+  background-light: #1f1f1f;
+  background-focus: #282828;
+  foreground:       #888888;
+  foreground-list:  #bbbbbb;
+  on:               #44ad4d;
+  off:              #e34039;
+}
+
+/*=============================================*/
+
+* {
+  /* General */
+  text-font:                            "Iosevka 14";
+  text-font-mono:                       "RobotoMono Nerd Font Regular 14";
+  icon-font:                            "Hurmit Nerd Font Mono 50";
+  icon-font-small:                      "Hurmit Nerd Font Mono 24";
+  option-element-padding:               30px  35px  25px  -40px;
+  option-3-window-padding:              20px 20px;
+  option-3-listview-spacing:            20px;
+}
+
+/*=============================================*/
+
+* {
+  background-color: @background;
+  text-color: @foreground;
+  font: @icon-font;
+}
+#window {
+  children: [ horibox ];
+}
+#horibox {
+  children: [ listview ];
+}
+#listview {
+  layout: vertical;
+}
+#element {
+  padding: @option-element-padding;
+  background-color: @background-light;
+}
+#element.selected {
+  background-color: @accent;
+  text-color: @background;
+}
+
+/*=============================================*/
+
+#window {
+  padding: @option-3-window-padding;
+}
+#listview {
+  spacing: @option-3-listview-spacing;
+}

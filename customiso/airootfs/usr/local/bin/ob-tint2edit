@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# al-tintedit: a ArchLabs tint2 config file editor
+# Copyright (C) 2015 damo <damo@bunsenlabs.org>
+# Borrowed with love by the ArchLabs boys.
+
+readonly TITLE="ArchLabs Tint2 Edit"
+readonly ICON="--window-icon=/usr/share/icons/ArchLabs-Light/64x64/places/distributor-logo-archlabs.png"
+readonly CHECKLIST="zenity --width=400 --height=500 $ICON --list --checklist --multiple"
+readonly TPATH="$HOME/.config/tint2"
+readonly FILES=($(find "$TPATH" -maxdepth 4 -type f))
+readonly HELP='
+\tal-tint2edit a script to edit selected tint2 config files
+\nOptions:
+\t-h --help   show this message
+\nNo other options are supported.
+\nTint2 files must be in ~/.config/tint2
+Checkmarked tint2s will be opened in the text editor.
+Multiple tint2s can be chosen.'
+
+case "$@" in
+    -h|--help) echo -e "$HELP" ; exit 0
+esac
+
+edit_Configs() {
+    for file in "${FILES[@]}"; do
+        NAME=$(basename "$file")
+        if grep -q "panel_monitor" "$file" || [[ $NAME = *tint2rc ]] || [[ $NAME == 'tint2rc' ]]; then
+            LIST="$LIST FALSE $NAME"
+            ARRAY+=("$file")
+        fi
+    done
+    MSG="<big>Select tint2 configs to edit</big>\n\n"
+    ANSWER=$($CHECKLIST --title="$TITLE" --text="$MSG" --column="Select" --column="Name" $LIST --separator=" ")
+    if [[ $? == 1 ]]; then
+        exit 0
+    else
+        for name in $ANSWER; do
+            for file in "${ARRAY[@]}"; do
+                if [[ $(basename "$file") == "$name" ]]; then
+                    if hash exo-open &>/dev/null; then
+                        (exo-open "$file" &) ; break
+                    elif hash termite &>/dev/null; then
+                        (termite -e "$EDITOR $file" &>/dev/null) ; break
+                    elif hash st &>/dev/null; then
+                        (st -e $EDITOR $file &) ; break
+                    elif hash urxvt &>/dev/null; then
+                        (urxvt -e "$EDITOR $file" &) ; break
+                    fi
+                fi
+            done
+        done
+    fi
+}
+
+edit_Configs
+
+exit 0

@@ -1,0 +1,10 @@
+[Main]
+width=490
+height=344
+xpos=440
+ypos=195
+show_tray_icon=1
+close_to_tray=1
+play_after_exit=0
+show_playlist=1
+filter=0

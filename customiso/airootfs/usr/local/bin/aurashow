@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Start urxvt with album art config
+# Execute 'my-music' from dmenu
+
+urxvt -hold -geometry 20x9 -e bash -c "aura -n os"

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=About
+Comment=About Developer
+Exec=/usr/local/bin/about.sh
+Icon=distributor-logo-archlinux
+Type=Application
+Categories=GTK;System;Settings;

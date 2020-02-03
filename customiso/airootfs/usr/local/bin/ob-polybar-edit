@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# al-polybar-edit: An ArchLabs polybar config file editor
+# Copyright (C) 2017 Nathaniel <natemaia10@gmail.com>
+
+readonly PPATH="$HOME/.config/polybar"
+readonly TITLE="ArchLabs Polybar Edit"
+readonly ICON="--window-icon=/usr/share/icons/ArchLabs-Light/64x64/places/distributor-logo-archlabs.png"
+readonly CHECKLIST="zenity $ICON --width=450 --height=500 --list --checklist --multiple"
+readonly HELP="al-polybar-edit:
+\tA script to edit selected polybar configs
+\nOptions:\n\t-h --help   show this message
+\tNo other options are supported.\n\nPolybar files must be in $PPATH
+Checkmarked configs will be opened in a text editor"
+
+case "$@" in
+    -h|--help) echo -e "$HELP" ; exit 0
+esac
+
+readonly FILES=($(find -L "$PPATH" -maxdepth 4 -type f))
+edit_Configs() {
+    for f in "${FILES[@]}"; do
+        if [[ $f = *config ]] || [[ $f = *conf ]] || [[ $f = *.sh ]] || [[ -x $f ]]; then
+            NAME=$(sed "s|${HOME}/.config||" <<< "$f")
+            LIST="$LIST FALSE $NAME"
+        fi
+    done
+    MSG="<big>Select Polybar Configs to edit</big>\n"
+    ANSWER=$($CHECKLIST --title="$TITLE" --text="$MSG" --column="Select" --column="File" $LIST --separator=" ")
+    if [[ $? == 1 ]]; then
+        exit 0
+    else
+        for name in $ANSWER; do
+            FULL="$HOME/.config/$name"
+            if hash exo-open &>/dev/null; then
+                (exo-open "$FULL" &) ; break
+            elif hash termite &>/dev/null; then
+                (termite -e "$EDITOR $FULL" &>/dev/null) ; break
+            elif hash st &>/dev/null; then
+                (st -e $EDITOR $FULL &) ; break
+            elif hash urxvt &>/dev/null; then
+                (urxvt -e "$EDITOR $FULL" &) ; break
+            fi
+        done
+    fi
+}
+
+edit_Configs
+
+exit 0

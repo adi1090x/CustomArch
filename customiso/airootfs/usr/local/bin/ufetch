@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Ufetch 
+# A simple screenfetch alternative
+# Original code from https://github.com/jschx/ufetch
+# I just slightly modified this
+# Cheers! Addy
+
+## Get system info
+user="${USER}@$(hostname)"
+distro='Arch Linux'
+kernel="$(uname -sr | sed 's/-.*//')"
+uptime="$(uptime -p | sed 's/up //')"
+packages="$(pacman -Q | wc -l)"
+shell="$(basename ${SHELL})"
+
+if [ -z "${WM}" ]; then
+	if [ "${XDG_CURRENT_DESKTOP}" ]; then
+		envtype='DE'
+		WM="${XDG_CURRENT_DESKTOP}"
+	elif [ "${DESKTOP_SESSION}" ]; then
+		envtype='DE'
+		WM="${DESKTOP_SESSION}"
+	else
+		envtype='WM'
+		WM="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+	fi
+else
+	envtype='WM'
+fi
+
+## Define Colours
+bold="$(tput bold)"
+red="$(tput setaf 4)"
+white="$(tput setaf 7)"
+bgred="$(tput setab 4)"
+reset="$(tput sgr0)"
+cbg="${reset}${bgred}${white}"
+cr="${reset}"
+c0="${reset}${bold}"
+c1="${reset}${red}"
+
+## Output
+
+cat <<EOF
+
+  ${c0}${cbg}              ${c1}   USER       ${cr}${user}${reset}
+  ${c0}${cbg}      /\      ${c1}   DISTRO     ${cr}${distro}${reset}
+  ${c0}${cbg}     /  \     ${c1}   KERNEL     ${cr}${kernel}${reset}
+  ${c0}${cbg}    /    \    ${c1}   UPTIME     ${cr}${uptime}${reset}
+  ${c0}${cbg}   / ---- \   ${c1}   ${envtype}         ${cr}${WM}${reset}
+  ${c0}${cbg}  /        \  ${c1}   SHELL      ${cr}${shell}${reset}
+  ${c0}${cbg}              ${c1}   PACKAGES   ${cr}${packages}${reset}
+
+EOF

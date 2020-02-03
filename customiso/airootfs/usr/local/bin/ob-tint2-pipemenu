@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+
+# al-tint2-pipemenu - an Openbox pipemenu for tint2 manipulation
+# Copyright (C) 2015-2016 damo
+# Borrowed with love by the ArchLabs boys.
+
+readonly TINT2RC="$HOME/.config/tint2/tint2rc"
+readonly HELP='
+al-tint2-pipemenu an Openbox Pipe Menu for tint2 manipulation
+It should normally be called from an openbox menu.
+
+Options:
+    -h --help   show this message
+
+If al-tint2-pipemenu is called with no options (the usual method),
+it will output an xml openbox pipemenu for handling tint2 sessions,
+and editing configuration files.
+
+For more information, see "man tint2"
+and Help >> Tint2 in the menu.'
+
+case "$@" in
+    -h|--help) echo "$HELP" ; exit 0
+esac
+
+if ! . "/usr/lib/archlabs/common/al-include.cfg" 2>/dev/null; then
+    echo $"Error: Failed to source /usr/lib/archlabs/al-include.cfg" >&2
+    exit 1
+fi
+
+loadTEditmenu() {
+    menuSeparator
+    if hash exo-open &>/dev/null; then
+        menuItem "Default tint2rc" "exo-open $TINT2RC"
+    else
+        menuItem "Default tint2rc" "termite -e '$EDITOR $TINT2RC'"
+    fi
+
+    if [[ $(pidof tint2) ]]; then
+        menuSubmenu "RunningTint2" "Running Tint2s"
+        while read -r pid cmd; do
+            if [[ ${cmd%% *} = "tint2" ]]; then
+                TINT=${cmd##* }
+                TINT2=${TINT#$HOME/.config/}
+                if [[ $TINT = "tint2" ]]; then
+                    TINT="$TINT2RC"
+                    TINT2="Default tint2rc"
+                fi
+                if hash exo-open &>/dev/null; then
+                    menuItem "$TINT2" "exo-open $TINT"
+                else
+                    menuItem "$TINT2" "termite -e '$EDITOR $TINT'"
+                fi
+            fi
+        done <<< "$(pgrep -a tint2)"
+        menuSubmenuEnd
+    fi
+}
+
+getTint2s() {
+    menuSubmenu "EditTint2" "Edit Tint2s"
+        if type al-tint2edit &>/dev/null; then
+            menuItem "Tint2 Editor" "al-tint2edit"
+        fi
+        loadTEditmenu
+    menuSubmenuEnd
+}
+
+loadChoosermenu() {
+    if type al-tint2zen &>/dev/null; then
+        menuItem "Tint2 Session GUI" "al-tint2zen"
+    fi
+}
+
+loadRestartmenu() {
+    if [[ $(pidof tint2) ]];then
+        if type al-tint2restart &>/dev/null; then
+            menuItem "Restart Tint2" "al-tint2restart"
+        fi
+        menuItem "Stop Tint2s" "pkill tint2"
+    fi
+}
+
+menuStart "Tintmenu" "Tint2"
+menuItem "Tint2 Settings" "tint2conf"
+loadChoosermenu
+loadRestartmenu
+getTint2s
+menuEnd

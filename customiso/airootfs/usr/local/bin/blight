@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# A simple script to display clock
+# 'blight -i' = with icon, 'blight' = text only
+
+BNESS="$(cat /sys/class/backlight/intel_backlight/actual_brightness)"
+
+	if  [[ $1 = "-i" ]]; then
+    echo "  $((BNESS*10/100))%"
+	else
+    echo "$((BNESS*10/100))%"
+    fi

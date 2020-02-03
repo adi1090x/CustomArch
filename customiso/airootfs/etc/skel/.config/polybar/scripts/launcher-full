@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+rofi -show run -config ~/.config/rofi/themes/config.simple -fullscreen True -lines 5 -line-margin 5 -padding 300

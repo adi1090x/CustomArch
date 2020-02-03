@@ -1,0 +1,8 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+compton
+nm-applet
+mpd
+lxdunst
+xfsettingsd

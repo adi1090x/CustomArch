@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dunst -config ~/.config/dunst/dunstrc.lxde &  

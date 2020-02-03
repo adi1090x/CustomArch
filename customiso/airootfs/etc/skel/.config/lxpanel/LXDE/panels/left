@@ -1,0 +1,112 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+  edge=top
+  monitor=0
+  height=30
+  align=left
+  margin=0
+  transparent=0
+  background=0
+}
+Plugin {
+  type=space
+  Config {
+    Size=4
+  }
+  expand=0
+}
+Plugin {
+  type=menu
+  Config {
+    system {
+    }
+    separator {
+    }
+    item {
+      command=run
+    }
+    separator {
+    }
+    item {
+      command=logout
+      image=gnome-logout
+    }
+    image=/usr/share/icons/Papirus-Dark/24x24/actions/application-menu.svg
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=6
+  }
+}
+Plugin {
+  type=launchbar
+  Config {
+    Button {
+      id=pcmanfm.desktop
+    }
+    Button {
+      id=firefox.desktop
+    }
+    Button {
+      id=lxterminal.desktop
+    }
+    Button {
+      id=leafpad.desktop
+    }
+  }
+}
+Plugin {
+  type=pager
+  Config {
+  }
+}
+Plugin {
+  type=taskbar
+  Config {
+  }
+}
+Plugin {
+  type=tray
+  Config {
+  }
+}
+Plugin {
+  type=volume
+  Config {
+  }
+}
+Plugin {
+  type=weather
+  Config {
+    alias=Delhi
+    city=Delhi
+    state=Delhi
+    country=India
+    units=c
+    latitude=28.651718
+    longitude=77.221939
+    interval=20
+    enabled=1
+    provider=openweathermap
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%I:%M %p
+    TooltipFmt=%c
+    BoldFont=1
+    IconOnly=0
+    CenterText=1
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=4
+  }
+}
