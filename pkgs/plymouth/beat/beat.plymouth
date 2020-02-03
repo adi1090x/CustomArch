@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Arch Beat
+Description=Arch beat theme.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/beat
+ScriptFile=/usr/share/plymouth/themes/beat/beat.script
