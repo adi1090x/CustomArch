@@ -2,9 +2,14 @@
 
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg) <br />
 
+The best thing about this ISO is, It can be installed (Offline) on a system as well as on a USB/SDcard. I've included the Pacbang-iso installer [abif](https://github.com/adi1090x/archlinux/tree/master/customiso/airootfs/abif-master) and customized it according to my ISO. Well, It's very simple installer, but as i mentioned earlier that it's newbie friendly arch linux so i'm trying to make a step by step guide on how to install it on your system. follow the steps - 
+
+**(1).** Open the installer, type *'install it'* in menu(Openbox) or execute *'install it'* on the desktop(Lxde). Choose your language and hit OK -
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_1.png">
 </p>
+
+**(2).** Now, choose *'1 Prepare installation'* -
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_2.png">
 </p>
