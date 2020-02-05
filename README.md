@@ -35,10 +35,23 @@ An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY 
 
 **Build ISO -** If you're already using archlinux & want to build the iso, maybe with your config then...
 
+Open the terminal & clone this repo 
 ```
 git clone https://github.com/adi1090x/archlinux.git
+```
+
+After cloning, run *setup.sh*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
+```
 cd archlinux
 chmod +x setup.sh
 ./setup.sh
 ```
-And, it'll generate the ISO.
+
+Now, Change to *customiso* directory & get **ROOT** & Run build command.
+```
+cd customiso
+sudo su
+./build.sh -v
+```
+
+If, Everything goes well, you'll have the ISO in *customiso/out* directory.
