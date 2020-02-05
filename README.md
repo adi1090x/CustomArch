@@ -40,18 +40,18 @@ Open the terminal & clone this repo
 git clone https://github.com/adi1090x/archlinux.git
 ```
 
-After cloning, run *setup.sh*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
+After cloning, run *'setup.sh'*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
 ```
 cd archlinux
 chmod +x setup.sh
 ./setup.sh
 ```
 
-Now, Change to *customiso* directory & get **ROOT** & Run build command.
+Now, Change to *'customiso'* directory & get ***ROOT*** & Run *'build.sh'*
 ```
 cd customiso
 sudo su
 ./build.sh -v
 ```
 
-If, Everything goes well, you'll have the ISO in *customiso/out* directory.
+If everything goes well, you'll have the ISO in *'customiso/out'* directory.
