@@ -9,31 +9,47 @@ The best thing about this ISO is, It can be installed (Offline) on a system as w
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_1.png">
 </p>
 
-**(2).** Now, choose *'1 Prepare installation'* -
+**(2).** Now, choose *'Prepare installation'* -
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_2.png">
 </p>
+
+**(3).** Choose *'Set Virtual Console'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_3.png">
 </p>
+
+**(4).** Set it according to you, i selected *'us'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_4.png">
 </p>
+
+**(5).** Choose *'Set Desktop Keyboard Layout'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_5.png">
 </p>
+
+**(6).** Again, according to you, mine is *'us'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_6.png">
 </p>
+
+**(7).** Next is *'List Devices'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_7.png">
 </p>
+
+**(8).** Here you can see your partitions and USB drives, decide where you want to install it.
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_8.png">
 </p>
+
+**(9).** Now Select *'Partition Disk'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_9.png">
 </p>
+
+**(10).** Select disk you want to partition, i'm installing it on USB so mine is *'/dev/sdb'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_10.png">
 </p>
