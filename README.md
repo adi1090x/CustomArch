@@ -1,7 +1,6 @@
 ![logo](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/logo.png) <br />
 
 An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts.
-<br />
 
 ## Features
 
@@ -27,7 +26,6 @@ An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY 
 + Terminals - termite, urxvt(compiled with pixbuf), xfce4-terminal, lxterminal
 + GUI - Thunar, Pcmanfm, Geany, Leafpad, Atril, Viewnior, Feh, Etc
 + CLI - vim, ranger, mc/mcedit, htop, bmon, nmon, neofetch, Etc
-<br />
 
 ## How To Get ISO
 
