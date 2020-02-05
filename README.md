@@ -92,8 +92,17 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 
 ![main](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/main.png) <br />
 
-|**WM/DE**|**Openbox**|**i3wm**|**Lxde**|
-|--|--|--|--|
-|***Theme***|[Arc Theme](https://github.com/horst3180/arc-theme)|[Arc Theme](https://github.com/horst3180/arc-theme)|[Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)|
-|***Icons***|[Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)|[Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)|[Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)|
-|***Fonts***|[Terminus TTF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1)|[Terminus TTF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)|[Noto Sans](https://github.com/googlefonts/noto-fonts)|
+**Openbox :**
++ Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
++ Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
++ Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1)
+
+**i3wm :**
++ Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
++ Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
++ Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)
+
+**Lxde :**
++ Theme - [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)
++ Icons - [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
++ Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
