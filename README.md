@@ -87,3 +87,7 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 
 **3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard.
 <br />
+
+## Overview
+
+![main](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/main.png) <br />
