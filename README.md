@@ -87,3 +87,10 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 <br />
 
 ## Booting The ISO
+
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/grub.jpeg) <br />
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/plymouth.jpeg) <br />
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxdm.jpeg) <br />
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox.jpeg) <br />
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/i3wm.jpeg) <br />
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg) <br />
