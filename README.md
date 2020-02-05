@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/logo.png) <br />
 
-An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts.
+An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
 
@@ -106,3 +106,4 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 + Theme - [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)
 + Icons - [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
+
