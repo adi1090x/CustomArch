@@ -33,7 +33,7 @@ An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY 
 
 [![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download.png)](ISO_URL_HERE) <br />
 
-**Build ISO -** If you're already using archlinux & want to build the iso, then...
+**Build ISO -** If you're already using archlinux & want to build the iso, maybe with your config then...
 
 ```
 git clone https://github.com/adi1090x/archlinux.git
@@ -41,3 +41,4 @@ cd archlinux
 chmod +x setup.sh
 ./setup.sh
 ```
+And, it'll generate the ISO.
