@@ -1,6 +1,7 @@
 ![logo](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/logo.png) <br />
 
-An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts. <br />
+An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts.
+<br />
 
 ## Features
 
@@ -55,7 +56,8 @@ sudo su
 ./build.sh -v
 ```
 
-If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
+If everything goes well, you'll have the ISO in *'customiso/out'* directory.
+<br />
 
 ## Boot The ISO
 
@@ -83,6 +85,7 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 ```
 <br />
 
-**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard. <br />
+**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard.
+<br />
 
 ## Booting The ISO
