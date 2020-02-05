@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/logo.png) <br />
 
-An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts.
+An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY enthusiasts. <br />
 
 ## Features
 
@@ -26,6 +26,7 @@ An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY 
 + Terminals - termite, urxvt(compiled with pixbuf), xfce4-terminal, lxterminal
 + GUI - Thunar, Pcmanfm, Geany, Leafpad, Atril, Viewnior, Feh, Etc
 + CLI - vim, ranger, mc/mcedit, htop, bmon, nmon, neofetch, Etc
+<br />
 
 ## How To Get ISO
 
@@ -54,11 +55,11 @@ sudo su
 ./build.sh -v
 ```
 
-If everything goes well, you'll have the ISO in *'customiso/out'* directory.
+If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
 
 ## Boot The ISO
 
-**1. Using GRUB -** If you're already using a linux distro, with grub, then you can add following entry in your *'grub.cfg'* file, Replace **"X"** with your partition number, and *'path_to_your_iso'* with ISO path, which can be *(/home/USERNAME/archlinux/customiso/out/archlinux-xxxx.xx.xx-x86_64.iso)*
+**1. Using GRUB -** If you're already using a linux distro, with grub, then you can add following entry in your *'grub.cfg'* file, Replace **"X"** with your partition number, and *'path_to_your_iso'* with ISO path, which can be *(/home/USERNAME/archlinux/customiso/out/archlinux-xxxx.xx.xx-x86_64.iso)* <br />
 ```
 menuentry 'Arch Linux Live' --class arch --class gnu-linux --class linux {
     set root='(hd0,X)'
@@ -73,13 +74,15 @@ menuentry 'Arch Linux Live' --class arch --class gnu-linux --class linux {
 }
 
 ```
+<br />
 
-**2. Using dd -** Alternatively, you can use ***dd*** command to burn ISO to a USB_Drive/SDcard, Just open the terminal and...
+**2. Using dd -** Alternatively, you can use ***dd*** command to make a bootable USB_Drive/SDcard, Just open the terminal and... <br />
 ```
 sudo su
 dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 ```
+<br />
 
-**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to burn ISO to USB/SDcard.
+**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard. <br />
 
 ## Booting The ISO
