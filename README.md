@@ -27,13 +27,13 @@ An Arch Linux Based Custom ISO Made With Archiso, Specially for newbies and DIY 
 + GUI - Thunar, Pcmanfm, Geany, Leafpad, Atril, Viewnior, Feh, Etc
 + CLI - vim, ranger, mc/mcedit, htop, bmon, nmon, neofetch, Etc
 
-## How To Get
+## How To Get ISO
 
-**Download -** You can either download already generated ISO file, or...
+**1. Download -** You can either download already generated ISO file, or...
 
 [![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download_iso.png)](ISO_URL_HERE) <br />
 
-**Build ISO -** If you're already using archlinux & want to build the iso, maybe with your config then...
+**2. Build ISO -** If you're already using archlinux & want to build the iso, maybe with your config then...
 
 Open the terminal & clone this repo 
 ```
@@ -55,3 +55,31 @@ sudo su
 ```
 
 If everything goes well, you'll have the ISO in *'customiso/out'* directory.
+
+## Boot The ISO
+
+**1. Using GRUB -** If you're already using a linux distro, with grub, then you can add following entry in your *'grub.cfg'* file, Replace **"X"** with your partition number, and *'path_to_your_iso'* with ISO path, which can be *(/home/USERNAME/archlinux/customiso/out/archlinux-xxxx.xx.xx-x86_64.iso)*
+```
+menuentry 'Arch Linux Live' --class arch --class gnu-linux --class linux {
+    set root='(hd0,X)'
+    set isofile="path_to_your_iso"
+    set dri="free"
+    search --no-floppy -f --set=root $isofile
+    probe -u $root --set=abc
+    set pqr="/dev/disk/by-uuid/$abc"
+    loopback loop $isofile
+    linux  (loop)/arch/boot/x86_64/vmlinuz img_dev=$pqr img_loop=$isofile driver=$dri quiet loglevel=3 systemd.show_status=false udev.log-priority=3 vt.global_cursor_default=0 splash cow_spacesize=1G
+    initrd  (loop)/arch/boot/intel_ucode.img (loop)/arch/boot/x86_64/archiso.img
+}
+
+```
+
+**2. Using dd -** Alternatively, you can use ***dd*** command to burn ISO to a USB_Drive/SDcard, Just open the terminal and...
+```
+sudo su
+dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
+```
+
+**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to burn ISO to USB/SDcard.
+
+## Booting The ISO
