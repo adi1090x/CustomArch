@@ -6,7 +6,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 ## Features
 
-+ Offline Installer - Installable ISO, [Guide Here]()
++ Offline Installer - Installable ISO, [Guide Here](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
 + Grub - With Themes - Configured/Customized
 + Plymouth - Arch Themes - Configured/Customized
 + Xorg Server / GUI
@@ -14,10 +14,10 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 + Openbox WM (Default), i3WM, Complete LXDE Sessions - Configured/Customized
 + Network Manager - Mobile Broadband, USB/Bluetooth Tethering - Configured/Customized
 + Full File Manager Functionality - Partition Mounting, Network Access, Desktop Icons
-+ Virtualbox Supported - [Screenshots]()
++ Virtualbox Supported - [Screenshots](https://github.com/adi1090x/archlinux/blob/master/images/vbox/README.md)
 + Compton Tryone - With Blur
 + Dunst - Notifications - Configured For Each Session
-+ Polybar - With All [My Themes]()
++ Polybar - With All [My Themes](https://github.com/adi1090x/polybar-themes)
 + Rofi - Custom Menus, Themes
 + Yay - AUR helper
 + Shell, Vim, Ranger, etc - Configured
@@ -99,21 +99,21 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1)
-+ Screenshots - [More Here]()
++ Screenshots - [More Here](https://github.com/adi1090x/archlinux/blob/master/images/openbox/README.md)
 <br />
 
 <img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/i3wm.jpeg"> **i3wm**
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)
-+ Screenshots - [More Here]()
++ Screenshots - [More Here](https://github.com/adi1090x/archlinux/blob/master/images/i3/README.md)
 <br />
 
 <img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg"> **Lxde**
 + Theme - [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)
 + Icons - [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
-+ Screenshots - [More Here]()
++ Screenshots - [More Here](https://github.com/adi1090x/archlinux/blob/master/images/lxde/README.md)
 <br />
 
 ***Extra***
@@ -135,10 +135,10 @@ Lxdm|eDEX-UI
 
 ## Installation
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg"> This ISO can be installed, Offline, thanks to [ABIF](). I've tested & installed it on a **USB Drive, SDcard, HDD & Virtualbox**, works as expected. Just Don't forget to install *virtualbox guest additions* after installing it on [vbox]().
+<img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg"> This ISO can be installed, Offline, thanks to [ABIF](https://github.com/adi1090x/archlinux/tree/master/customiso/airootfs/abif-master). I've tested & installed it on a **USB Drive, SDcard, HDD & Virtualbox**, works as expected. Just Don't forget to install *virtualbox guest additions* after installing it on [vbox](https://github.com/adi1090x/archlinux/blob/master/images/vbox/README.md).
 <br />
 <br />
-The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've made a step by step guide on how to install it - [Here, How To Install It.]()
+The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've made a step by step guide on how to install it - [Here, How To Install It.](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
 <br />
 
 ## Few Words
