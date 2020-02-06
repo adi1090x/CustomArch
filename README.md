@@ -58,7 +58,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 - [ ] Arch Linux 64-bit only
 - [ ] Clear pacman cache; ```sudo pacman -Scc```
 - [ ] Configure everything as *root*
-- [ ] disable auto update if possible
+- [ ] Disable auto updates
 
 Open the terminal & clone this repo 
 ```
@@ -79,8 +79,8 @@ sudo su
 ./build.sh -v
 ```
 
-If everything goes well, you'll have the ISO in *'customiso/out'* directory.
-If you want to build the ISO again, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only.
+If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
+If you want to build the ISO again, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only. 
 <br />
 
 ## Boot The ISO
