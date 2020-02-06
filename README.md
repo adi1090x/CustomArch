@@ -136,7 +136,7 @@ Lxdm|eDEX-UI
 <img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg"> This ISO can be installed, Offline, thanks to [ABIF](). I've tested & installed it on a **USB Drive, SDcard, HDD & Virtualbox**, works as expected. Just Don't forget to install *virtualbox guest additions* after installing it on [vbox]().
 <br />
 <br />
-The installer is very simple and easy to use, but what if you're still a *windows* guy. So i've made a step by step guide on how to install it - [Here, How To Install It]()
+The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've made a step by step guide on how to install it - [Here, How To Install It]()
 <br />
 <br />
 
