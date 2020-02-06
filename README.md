@@ -92,20 +92,29 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 
 ## Overview
 
-<img align="right" width="350" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox.jpeg"> **Openbox**
+<img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox.jpeg"> **Openbox**
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1)
-+ Screenshots - More [Here...]()
++ Screenshots - [More Here]()
+<br />
+<br />
+<br />
 
-<img align="left" width="350" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/i3wm.jpeg"> **i3wm**
+<img align="left" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/i3wm.jpeg"> **i3wm**
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)
-+ Screenshots - More [Here...]()
++ Screenshots - [More Here]()
+<br />
+<br />
+<br />
 
-<img align="right" width="350" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg"> **Lxde**
+<img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg"> **Lxde**
 + Theme - [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)
 + Icons - [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
-+ Screenshots - More [Here...]()
++ Screenshots - [More Here]()
+<br />
+<br />
+<br />
