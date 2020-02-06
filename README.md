@@ -80,7 +80,7 @@ sudo su
 ```
 
 If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
-If you want to build the ISO again, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only. 
+If you want to Rebuild the ISO, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only. 
 <br />
 
 ## Boot The ISO
