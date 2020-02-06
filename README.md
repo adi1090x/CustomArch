@@ -113,7 +113,14 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 + Screenshots - [More Here]()
 <br />
 
-***Extra :***
+***Extra***
+
++ I've installed three Sessions in the ISO, *Openbox* is the default Session, *i3wm* specially for terminals and *Lxde*, if you're too lazy to use keyboard.
++ Personally, i love eDEX-UI, So i've added it in *setup.sh*, it's optional for you.
++ Default grub is ugly and on arch linux, well it sucks, so i've configured it to sush it completely & added custom entries &
+a beautiful theme.
++ Also, I tricked the AUR plymouth pkg to have this heart-beat kind to theme, so i can have it on ISO's initrd.
++ I've made this *adapta* style lxdm theme, which looks... good, i guess, At first i configred *lightdm* with *webkit2-greeter*, but it was very slow and buggy, so i replaced it with *lxdm*. well, it's on you, you want lightdm... *Source is yours.*
 
 Grub|Plymouth
 :--:|:--:
@@ -122,3 +129,20 @@ Grub|Plymouth
 Lxdm|eDEX-UI
 :--:|:--:
 ![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxdm.jpeg)|![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/edex.png)
+
+## Installation
+
+<img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg"> This ISO can be installed, Offline, thanks to [ABIF](). I've tested & installed it on a **USB Drive, SDcard, HDD & Virtualbox**, works as expected. Just Don't forget to install *virtualbox guest additions* after installing it on [vbox]().
+<br />
+<br />
+The installer is very simple and easy to use, but what if you're still a *windows* guy. So i've made a step by step guide on how to install it - [Here, How To Install It]()
+<br />
+<br />
+<br />
+
+## Few Words
+
++ **Important -** I've tested it on two laptops, with intel pantium & i3 CPUs. obviously ISO have intel-video drivers, if you have nvidia or something, edit *packages.x86_64* and replace the drivers section with your GPU drivers packages, or WM/DE might freeze on startup.
++ You may have to modify some config files according to your system, (i mean that's the goal, right). Ex- *customiso/airootfs/etc/skel/.config/i3status/config*, *customiso/airootfs/etc/skel/.config/polybar/modules.ini* for *Battery* & *Network* Modules.
++ It's a 64-bit only ISO/OS.
++ Arch is not beginner's friendly OS, so if it's your first time with arch linux... then your welcome, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
