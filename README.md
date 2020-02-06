@@ -129,7 +129,6 @@ Grub|Plymouth
 Lxdm|eDEX-UI
 :--:|:--:
 ![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxdm.jpeg)|![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/edex.png)
-<br />
 
 ## Installation
 
@@ -137,7 +136,6 @@ Lxdm|eDEX-UI
 <br />
 <br />
 The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've made a step by step guide on how to install it - [Here, How To Install It.]()
-<br />
 <br />
 
 ## Few Words
