@@ -29,6 +29,8 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 + GUI - Thunar, Pcmanfm, Geany, Leafpad, Atril, Viewnior, Feh, Etc
 + CLI - vim, ranger, mc/mcedit, htop, bmon, nmon, neofetch, Etc
 
+![main](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/main.png) <br />
+
 ## How To Get ISO
 
 **1. Download -** You can either download already generated ISO file, or...
@@ -90,20 +92,29 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 
 ## Overview
 
-![main](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/main.png) <br />
-
-**Openbox :**
+<img align="right" width="400" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox.jpeg"> **Openbox :**
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1)
++ Screenshots - More [Here...]()
+<br />
+<br />
 
-**i3wm :**
+
+<img align="left" width="400" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/i3wm.jpeg"> **i3wm :**
 + Theme - [Arc Theme](https://github.com/horst3180/arc-theme)
 + Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme)
 + Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)
++ Screenshots - More [Here...]()
+<br />
+<br />
 
-**Lxde :**
+
+<img align="right" width="400" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg"> **Lxde :**
 + Theme - [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)
 + Icons - [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
++ Screenshots - More [Here...]()
+<br />
+<br />
 
