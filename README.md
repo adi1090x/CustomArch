@@ -9,12 +9,12 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 + Offline Installer - Installable ISO, [Guide Here](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
 + Grub - With Themes - Configured/Customized
 + Plymouth - Arch Themes - Configured/Customized
-+ Xorg Server / GUI
++ Xorg Server / GUI - *Intel Video Drivers*
 + LXDM Display Manager - Configured/Customized
-+ Openbox WM (Default), i3WM, Complete LXDE Sessions - Configured/Customized
-+ Network Manager - Mobile Broadband, USB/Bluetooth Tethering - Configured/Customized
-+ Full File Manager Functionality - Partition Mounting, Network Access, Desktop Icons
-+ Virtualbox Supported - [Screenshots](https://github.com/adi1090x/archlinux/blob/master/images/vbox/README.md)
++ Openbox WM (Default), i3WM & LXDE Sessions - Configured/Customized
++ Network Manager - Mobile Broadband, USB/Bluetooth Tethering, nm-applet,nm_dmenu
++ Full File Manager Functionality - Partition Mounting, Network Access, Thumbnails Etc
++ Virtualbox Support - [Screenshots](https://github.com/adi1090x/archlinux/blob/master/images/vbox/README.md)
 + Compton Tryone - With Blur
 + Dunst - Notifications - Configured For Each Session
 + Polybar - With All [My Themes](https://github.com/adi1090x/polybar-themes)
@@ -28,6 +28,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 + Terminals - termite, urxvt(compiled with pixbuf), xfce4-terminal, lxterminal
 + GUI - Thunar, Pcmanfm, Geany, Leafpad, Atril, Viewnior, Feh, Etc
 + CLI - vim, ranger, mc/mcedit, htop, bmon, nmon, neofetch, Etc
++ And a lot, don't remember everything, check the source
 
 ![main](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/main.png) <br />
 
@@ -87,10 +88,7 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 ```
 <br />
 
-**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard.
-<br />
-
-**4. More Options -** [This](https://wiki.archlinux.org/index.php/USB_flash_installation_media) is a detailed guide to create an arch linux installation media.
+**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard. More Options [This](https://wiki.archlinux.org/index.php/USB_flash_installation_media)
 <br />
 
 ## Overview
@@ -145,6 +143,9 @@ The installer is very simple and easy to use, but what if you're still a *window
 + I'm really bad at *Naming Things*, So i've keep it simple - just ***Archlinux***. 
 + Default **username** and **password** is ***liveuser*** (Live ISO Only).
 + **Important -** I've tested it on two laptops, with intel pantium & i3 CPUs. Obviously ISO have intel-video drivers, if you have *nvidia* or something, edit *packages.x86_64* and replace the drivers section with your GPU drivers packages, or WM/DE might freeze on startup.
++ My display resolution is 1366x768, if you have a 1920x1080 Display, then you have to edit *customiso/airootfs/etc/skel/.config/rofi/themes/shared/settings.rasi* or *$HOME/.config/rofi/themes/shared/settings.rasi* & replace it with your display resolution for *rofi-menus* to work.
 + You may have to modify some config files according to your system, (i mean that's the goal, right). ***Ex-*** *customiso/airootfs/etc/skel/.config/i3status/config*, *customiso/airootfs/etc/skel/.config/polybar/modules.ini* for *Battery* & *Network* Modules.
++ By default, touchpad is disabled. To enable it... Open Settings manager & goto *'Mouse & Touchpad>Touchpad>Tap to click'*.
++ While installing it on the USB, installer seems like it freezed when grub was installing. Problem it - *os-prober* was taking a long time to detect other OS installed on system. it took 10-12 mins to complete. on other media (SDcard & HDD), there was no such issue. Maybe it's a bug related to os-prober, thought i should mention it here. if you face it, kindly wait!
 + It's a 64-bit only ISO/OS.
 + Arch is not beginner's friendly OS, so if it's your first time with arch linux... then your welcome, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
