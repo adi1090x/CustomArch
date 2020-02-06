@@ -154,117 +154,117 @@ The best thing about this ISO is, It can be installed (Offline) on a system as w
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_30.png">
 </p>
 
-**().** Select *'Configure Base'*, It'll configure the installed system.
+**(31).** Select *'Configure Base'*, It'll configure the installed system.
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_31.png">
 </p>
 
-**().** Select *'Generate FSTAB'*
+**(32).** Select *'Generate FSTAB'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_32.png">
 </p>
 
-**().** Choose 3rd option *'Device UUID'*
+**(33).** Choose 3rd option *'Device UUID'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_33.png">
 </p>
 
-**().** Set *'Hostname'*
+**(34).** Set *'Hostname'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_34.png">
 </p>
 
-**().** Whatever you *'like'*
+**(35).** Whatever you *'like'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_35.png">
 </p>
 
-**().** Choose *'Set System Locale'*
+**(36).** Choose *'Set System Locale'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_36.png">
 </p>
 
-**().** I'm going for *'en_US.UTF-8'*
+**(37).** I'm going for *'en_US.UTF-8'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_37.png">
 </p>
 
-**().** Choose *'Set Timezone and Clock'*
+**(38).** Choose *'Set Timezone and Clock'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_38.png">
 </p>
 
-**().** And Choose, according to you, Hit *'Yes'*
+**(39).** And Choose, according to you, Hit *'Yes'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_39.png">
 </p>
 
-**().** Select *'utc'* or *'localtime'*
+**(40).** Select *'utc'* or *'localtime'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_40.png">
 </p>
 
-**().** Select *'Set Root Password'* for root login
+**(41).** Select *'Set Root Password'* for root login
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_41.png">
 </p>
 
-**().** Type a strong *'password'* & hit Ok
+**(42).** Type a strong *'password'* & hit Ok
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_42.png">
 </p>
 
-**().** Select *'Add New User(s)'* to create a non-root user
+**(43).** Select *'Add New User(s)'* to create a non-root user
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_43.png">
 </p>
 
-**().** Type the *'username'*
+**(44).** Type the *'username'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_44.png">
 </p>
 
-**().** And *'password'* for *'Regular user'*
+**(45).** And *'password'* for *'Regular user'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_45.png">
 </p>
 
-**().** And *'Done'*, User Added.
+**(46).** And *'Done'*, User Added.
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_46.png">
 </p>
 
-**().** Next is *'Security and Systemd Tweaks'*, Not Really Needed.
+**(47).** Next is *'Security and Systemd Tweaks'*, Not Really Needed.
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_47.png">
 </p>
 
-**().** Ignore & hit *'Ok'*
+**(48).** Ignore & hit *'Ok'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_48.png">
 </p>
 
-**().** Next Option is *'Review Configuration Files'*
+**(49).** Next Option is *'Review Configuration Files'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_49.png">
 </p>
 
-**().** Now, if you want to review the config files, choose the option and it'll open the file in *'geany'*
+**(50).** Now, if you want to review the config files, choose the option and it'll open the file in *'geany'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_50.png">
 </p>
 
-**().** I've already configured everything in ISO, so nothing to do here. hit *'back'*
+**(51).** I've already configured everything in ISO, so nothing to do here. hit *'back'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_51.png">
 </p>
 
-**().** And *'Done'*, System Installed
+**(52).** And *'Done'*, System Installed
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_52.png">
 </p>
 
-**().** Hit Yes and *'close installer'*
+**(53).** Hit Yes and *'close installer'*
 <p align="center">
   <img src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/Installer/abif_53.png">
 </p>
