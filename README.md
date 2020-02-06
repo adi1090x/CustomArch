@@ -6,7 +6,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 ## Features
 
-+ Offline Installer - Installable ISO
++ Offline Installer - Installable ISO, [Guide Here]()
 + Grub - With Themes - Configured/Customized
 + Plymouth - Arch Themes - Configured/Customized
 + Xorg Server / GUI
@@ -14,10 +14,10 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 + Openbox WM (Default), i3WM, Complete LXDE Sessions - Configured/Customized
 + Network Manager - Mobile Broadband, USB/Bluetooth Tethering - Configured/Customized
 + Full File Manager Functionality - Partition Mounting, Network Access, Desktop Icons
-+ Virtualbox Support - Configured
++ Virtualbox Supported - [Screenshots]()
 + Compton Tryone - With Blur
 + Dunst - Notifications - Configured For Each Session
-+ Polybar - With All My Themes
++ Polybar - With All [My Themes]()
 + Rofi - Custom Menus, Themes
 + Yay - AUR helper
 + Shell, Vim, Ranger, etc - Configured
@@ -33,7 +33,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 ## How To Get ISO
 
-**1. Download -** You can either download already generated ISO file, or...
+**1. Download -** You can either download already generated ISO file ***[UPLOAD LATER]***, or...
 
 [![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download_iso.png)](ISO_URL_HERE) <br />
 
@@ -88,6 +88,9 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 <br />
 
 **3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard.
+<br />
+
+**4. More Options -** [This](https://wiki.archlinux.org/index.php/USB_flash_installation_media) is a detailed guide to create an arch linux installation media.
 <br />
 
 ## Overview
