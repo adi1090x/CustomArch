@@ -112,3 +112,13 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 + Fonts - [Noto Sans](https://github.com/googlefonts/noto-fonts)
 + Screenshots - [More Here]()
 <br />
+
+***Extra :***
+
+Grub|Plymouth
+:--:|:--:
+![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/grub.jpeg)|![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/plymouth.jpeg)
+
+Lxdm|eDEX-UI
+:--:|:--:
+![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxdm.jpeg)|![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/edex.jpeg)
