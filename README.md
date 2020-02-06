@@ -119,7 +119,7 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 + Personally, i love eDEX-UI, So i've added it in *setup.sh*, it's optional for you.
 + Default grub is ugly and on arch linux, well it sucks, so i've configured it to sush it completely & added custom entries &
 a beautiful theme.
-+ Also, I tricked the AUR plymouth pkg to have this heart-beat kind to theme, so i can have it on ISO's initrd.
++ Also, I tricked the AUR plymouth pkg to have this heart-beat kinda theme, so i can have it on ISO's initrd.
 + I've made this *adapta* style lxdm theme, which looks... good, i guess, At first i configred *lightdm* with *webkit2-greeter*, but it was very slow and buggy, so i replaced it with *lxdm*. well, it's on you, you want lightdm... *Source is yours.*
 
 Grub|Plymouth
@@ -129,6 +129,7 @@ Grub|Plymouth
 Lxdm|eDEX-UI
 :--:|:--:
 ![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxdm.jpeg)|![img](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/edex.png)
+<br />
 
 ## Installation
 
@@ -136,7 +137,6 @@ Lxdm|eDEX-UI
 <br />
 <br />
 The installer is very simple and easy to use, but what if you're still a *windows* guy. So i've made a step by step guide on how to install it - [Here, How To Install It]()
-<br />
 <br />
 <br />
 
