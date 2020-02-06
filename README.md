@@ -141,7 +141,8 @@ The installer is very simple and easy to use, but what if you're still a *window
 <br />
 
 ## Few Words
-
++ I'm really bad at *Naming Things*, So i've keep it simple - just ***Archlinux***. 
++ Default **username** and **password** is ***liveuser*** (Live ISO Only).
 + **Important -** I've tested it on two laptops, with intel pantium & i3 CPUs. Obviously ISO have intel-video drivers, if you have *nvidia* or something, edit *packages.x86_64* and replace the drivers section with your GPU drivers packages, or WM/DE might freeze on startup.
 + You may have to modify some config files according to your system, (i mean that's the goal, right). ***Ex-*** *customiso/airootfs/etc/skel/.config/i3status/config*, *customiso/airootfs/etc/skel/.config/polybar/modules.ini* for *Battery* & *Network* Modules.
 + It's a 64-bit only ISO/OS.
