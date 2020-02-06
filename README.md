@@ -142,6 +142,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 <br />
 
 ## Few Words
+
 + I'm really bad at *Naming Things*, So i've keep it simple - just ***Archlinux***. 
 + Default **username** and **password** is ***liveuser*** (Live ISO Only).
 + **Important -** I've tested it on two laptops, with intel pantium & i3 CPUs. Obviously ISO have intel-video drivers, if you have *nvidia* or something, edit *packages.x86_64* and replace the drivers section with your GPU drivers packages, or WM/DE might freeze on startup.
@@ -150,4 +151,16 @@ The installer is very simple and easy to use, but what if you're still a *window
 + By default, touchpad is disabled. To enable it... Open Settings manager & goto *'Mouse & Touchpad>Touchpad>Tap to click'*.
 + While installing it on the USB, installer seems like it freezed when grub was installing. Problem it - *os-prober* was taking a long time to detect other OS installed on system. it took 10-12 mins to complete. on other media (SDcard & HDD), there was no such issue. Maybe it's a bug related to os-prober, thought i should mention it here. if you face it, pls wait!
 + It's a 64-bit only ISO/OS.
++ ***Updates:*** Well, the best things is, you'll always get the latest Linux kernel, Archlinux System & Packages, only if you *build it*. if you can't, well i'll try to update the ISO **Every 3rd Month**. And TBH, updating arch is very simple, you can install the ISO, and ```sudo pacman -Syu```, That's it... DONE!
 + Arch is not beginner's friendly OS, so if it's your first time with arch linux... then your welcome, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
+
+<!--
+### Sources
++ Theme - [Arc Theme](https://github.com/horst3180/arc-theme) & [Adapta Theme](https://github.com/adapta-project/adapta-gtk-theme)<br />
++ Icons - [Arc Icon Theme](https://github.com/horst3180/arc-icon-theme) & [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)<br />
++ Fonts - [Terminus](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Terminus/terminus-ttf-4.40.1) & [Noto Sans](https://github.com/googlefonts/noto-fonts)<br />
++ Plymouth - [Arch-beat](https://github.com/nenad/arch-beat)<br />
++ Grub2 - [Grub2-themes](https://github.com/vinceliuice/grub2-themes)<br />
++ Rofi - [Rofi-menus](https://gitlab.com/vahnrr/rofi-menus)<br />
++ Some Configs - [Here](https://github.com/addy-dclxvi/dotfiles)
+-->
