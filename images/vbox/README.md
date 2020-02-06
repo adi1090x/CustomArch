@@ -20,6 +20,6 @@
 
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/vbox/vbox_8.png) <br />
 
-![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/vbox/vbox_9.png) <br />
-
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/vbox/vbox_10.png) <br />
+
+![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/vbox/vbox_9.png) <br />
