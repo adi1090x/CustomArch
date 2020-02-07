@@ -2,10 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/license-GNU-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Release-1.0-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Issues-0-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Pull Requests-0-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/adi1090x/archlinux?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/adi1090x/archlinux?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/adi1090x/archlinux?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
 </p>
 
 An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
