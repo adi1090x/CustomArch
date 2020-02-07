@@ -3,9 +3,10 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/adi1090x/archlinux?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=violet&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/adi1090x/archlinux?color=teal&style=for-the-badge">
   <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/adi1090x/archlinux/total.svg?style=for-the-badge">
 </p>
 
 An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
@@ -117,7 +118,7 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 ```
 <br />
 
-**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard. More Options [This](https://wiki.archlinux.org/index.php/USB_flash_installation_media)
+**3. Using Etcher -** If you use *Windows*, or maybe linux but afraid of ***dd***, then you can use [Etcher](https://www.balena.io/etcher/) to make a bootable USB/SDcard. More Options [Here](https://wiki.archlinux.org/index.php/USB_flash_installation_media)
 <br />
 
 ## Overview
@@ -191,5 +192,6 @@ The installer is very simple and easy to use, but what if you're still a *window
 + Plymouth - [Arch-beat](https://github.com/nenad/arch-beat)<br />
 + Grub2 - [Grub2-themes](https://github.com/vinceliuice/grub2-themes)<br />
 + Rofi - [Rofi-menus](https://gitlab.com/vahnrr/rofi-menus)<br />
++ eDEX-UI - [eDEX](https://github.com/GitSquared/edex-ui)<br />
 + Some Configs - [Here](https://github.com/addy-dclxvi/dotfiles)
 -->
