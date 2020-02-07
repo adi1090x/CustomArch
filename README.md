@@ -3,8 +3,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/adi1090x/archlinux?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/adi1090x/archlinux?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/adi1090x/archlinux?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/adi1090x/archlinux?color=purple&style=for-the-badge">
   <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
 </p>
 
