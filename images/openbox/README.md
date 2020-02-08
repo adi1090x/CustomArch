@@ -7,48 +7,70 @@
 
 **>>>** Openbox - Desktop
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_1.png) <br />
+
 **>>>** Terminal - termite (neofetch)
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_2.png) <br />
+
 **>>>** File Manager (thunar)
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_3.png) <br />
+
 **>>>** Alternate File Manager (pcmanfm)
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_4.png) <br />
+
 **>>>** Text Editor/IDE (geany)
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_5.png) <br />
+
 **>>>** Thunar, Termite, Openbox Menu, htop
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_6.png) <br />
+
 **>>>** Vim, htop
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_7.png) <br />
+
 **>>>** Urxvt - pixbuf - neofetch with image
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_8.png) <br />
+
 **>>>** Openbox Menu - Places
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_9.png) <br />
+
 **>>>** Showoff - ranger, ncmpcpp, htop, aurafetch, ob-menu
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_10.png) <br />
+
 **>>>** Notification - dunst - ncmpcpp
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_11.png) <br />
+
 **>>>** Notification - dunst - backlight
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_12.png) <br />
+
 **>>>** Notification - dunst - volume
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_13.png) <br />
+
 **>>>** Powermenu - Rofi
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_14.png) <br />
+
 **>>>** Lock screen - i3lock
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_15.png) <br />
+
 **>>>** Networkmanager_dmenu - Rofi
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_16.png) <br />
+
 **>>>** Another Shot - ranger, ncmpcpp, cava, htop
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_17.png) <br />
+
 **>>>** Web Browser - firefox
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_18.png) <br />
+
 **>>>** App Launcher - Rofi
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_19.png) <br />
+
 **>>>** Alternate App Launcher - Rofi Sidebar
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_20.png) <br />
+
 **>>>** Searchbar - Rofi
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_21.png) <br />
+
 **>>>** Opening Installer
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_22.png) <br />
+
 **>>>** Installer - abif
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/openbox/ob_23.png) <br />
 
