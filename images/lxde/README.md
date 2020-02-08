@@ -3,7 +3,7 @@
 ![image](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde.jpeg) <br />
 
 ### Overview
-LXDE - The "Lightweight X11 Desktop Environment" is an extremely fast-performing and energy-saving desktop environment. Maintained by an international community of developers, it comes with a beautiful interface, multi-language support, standard keyboard short cuts and additional features like tabbed file browsing. LXDE uses less CPU and less RAM than other environments. It is especially designed for cloud computers with low hardware specifications, such as, netbooks, mobile devices (e.g. MIDs) or older computers.
+LXDE - The "Lightweight X11 Desktop Environment" is an extremely fast-performing and energy-saving desktop environment. Maintained by an international community of developers, it comes with a beautiful interface, multi-language support, standard keyboard short cuts and additional features like tabbed file browsing. LXDE uses less CPU and less RAM than other environments. It is especially designed for cloud computers with low hardware specifications, such as, netbooks, mobile devices (e.g. MIDs) or older computers. Some screenshots here...
 
 **>>>** Desktop
 ![lxde](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde/lxde_1.png) <br />
