@@ -44,15 +44,13 @@ LXDE - The "Lightweight X11 Desktop Environment" is an extremely fast-performing
 **>>>** Installer - abif
 ![lxde](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/lxde/lxde_13.png) <br />
 
-<!--
 ### Keybindings
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
-+ **Super+** : 
--->
+
++ **Super+F** : File Manager (pcmanfm)
++ **Super+E** : Text Editor (leafpad)
++ **Super+T** : Terminal (lxterminal)
++ **Super+R** : Run (lxpanelctl run)
++ **Super+S** : Search Files (pcmanfm)
++ **Super+W** : Web Browser (firefox)
++ **Super+X** : Power Menu (lxde-logout)
++ **Rest...** : Same As Openbox
