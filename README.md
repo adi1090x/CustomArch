@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=violet&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/adi1090x/archlinux?color=teal&style=for-the-badge">
   <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/adi1090x/archlinux/total.svg?style=for-the-badge">
+<!--  <img src="https://img.shields.io/github/downloads/adi1090x/archlinux/total.svg?style=for-the-badge"> -->
 </p>
 
 An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
@@ -56,7 +56,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 ## How To Get ISO
 
-**1. Download -** You can either download already generated ISO file, or...
+**1. Download -** You can either download already generated ISO file ***[Upload Later]***, or...
 
 [![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download_iso.png)](ISO_URL_HERE) <br />
 
