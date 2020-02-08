@@ -56,7 +56,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 ## How To Get ISO
 
-**1. Download -** You can either download already generated ISO file ***[UPLOAD LATER]***, or...
+**1. Download -** You can either download already generated ISO file, or...
 
 [![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download_iso.png)](ISO_URL_HERE) <br />
 
@@ -182,7 +182,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 + While installing it on the USB, installer seems like it freezed when grub was installing. Problem it - *os-prober* was taking a long time to detect other OS installed on system. it took 10-12 mins to complete. on other media (SDcard & HDD), there was no such issue. Maybe it's a bug related to os-prober, thought i should mention it here. if you face it, pls wait!
 + It's a 64-bit only ISO/OS.
 + ***Updates:*** Well, the best things is, you'll always get the latest Linux kernel, Archlinux System & Packages, only if you *build it*. if you can't, well i'll try to update the ISO **Every 3rd Month**. And TBH, updating arch is very simple, you can install the ISO, and ```sudo pacman -Syu```, That's it... DONE!
-+ Arch is not beginner's friendly OS, so if it's your first time with arch linux... then your welcome, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
++ Arch is not beginner's friendly OS, so if it's your first time with arch linux... *your welcome*, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
 
 <!--
 ### Sources
