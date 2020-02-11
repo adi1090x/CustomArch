@@ -57,9 +57,6 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 ## How To Get ISO
 
 **1. Download -** You can either download already generated ISO file, or...
-
-<!--[![Download](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/download_iso.png)](https://www.dropbox.com/sh/vv5a0apzu8zlqnk/AADaIX6pXSqQcLhvDiiNOWkha?dl=0) <br /> -->
-
 <p align="center">
   <a href="https://www.dropbox.com/sh/vv5a0apzu8zlqnk/AADaIX6pXSqQcLhvDiiNOWkha?dl=0" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=dropbox"></a>
 </p>
