@@ -185,6 +185,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 + It's a 64-bit only ISO/OS.
 + ***Updates:*** Well, the best things is, you'll always get the latest Linux kernel, Archlinux System & Packages, only if you *build it*. if you can't, well i'll try to update the ISO **Every 3rd Month**. And TBH, updating arch is very simple, you can install the ISO, and ```sudo pacman -Syu```, That's it... DONE!
 + Arch is not beginner's friendly OS, so if it's your first time with arch linux... *your welcome*, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
++ Share this **repo** with your friends/classmates/colleagues who're new to linux/Archlinux.
 
 <!--
 ### Sources
