@@ -81,6 +81,7 @@ xl2tpd
 
 # Xorg Packages
 xorg
+xorg-fonts-misc
 
 # Intel Drivers
 xf86-video-intel
