@@ -9,6 +9,10 @@
 <!--  <img src="https://img.shields.io/github/downloads/adi1090x/archlinux/total.svg?style=for-the-badge"> -->
 </p>
 
+<p align="center">
+<a href="https://www.buymeacoffee.com/adi1090x" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+</p>
+
 An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
