@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Music
-Comment=Ncmpcpp with album art
-Exec=/usr/local/bin/music
-Icon=lxmusic
-Type=Application
-Categories=AudioVideo;Audio;Player;GTK;
-

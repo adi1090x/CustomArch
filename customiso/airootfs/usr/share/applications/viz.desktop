@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Visualizer
-Comment=Ncmpcpp Visualizer
-Exec=/usr/local/bin/viz
-Icon=kwave
-Type=Application
-Categories=AudioVideo;Audio;Player;GTK;
-

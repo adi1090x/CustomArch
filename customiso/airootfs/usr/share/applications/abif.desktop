@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Install It
-Comment=Abif Installer
-Exec=termite -e "sudo /abif-master/abif"
-Icon=distributor-logo-archlinux
-Type=Application
-Categories=System;Settings;
