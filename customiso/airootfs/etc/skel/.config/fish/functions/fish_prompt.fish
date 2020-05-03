@@ -51,9 +51,9 @@ set fish_pager_color_prefix cyan
 set fish_pager_color_progress cyan
 
 ## Aliases
-alias ls "ls --group-directories-first"
-alias l "ls -lh"
-alias la "ls -a"
+alias ls "ls --group-directories-first --color=always"
+alias l "ls -lh --color=always"
+alias la "ls -a --color=always"
 alias xx "chmod +x"
 alias grep "grep --color=auto"
 alias xfd "xfd -geometry 1100x700+10+10"

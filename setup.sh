@@ -76,6 +76,9 @@ echo
 echo -e $Y" [*] Cloning perl-linux-desktopfiles - "$C
 git clone https://aur.archlinux.org/perl-linux-desktopfiles.git --depth 1 $PR7
 echo
+echo -e $Y"[*] Cloning plymouth - "$C
+git clone https://aur.archlinux.org/plymouth.git --depth 1 $PR11
+echo
 echo -e $Y" [*] Cloning polybar - "$C
 git clone https://aur.archlinux.org/polybar.git --depth 1 $PR8
 echo
@@ -143,10 +146,36 @@ cd $PR10 && makepkg -s
 mv *.pkg.tar.xz ../../localrepo/x86_64
 cd ..
 
-echo -e $Y" [*] Building $PR11 - "$C
-cd $PR11 && makepkg -s
+echo -e $Y"[*] Building $PR11 - "$C
+cd $PR11
+cp -r $DIR/pkgs/beat $DIR/pkgs/plymouth
+sed -i '$d' PKGBUILD
+cat >> PKGBUILD <<EOL
+  sed -i -e 's/Theme=.*/Theme=beat/g' \$pkgdir/etc/plymouth/plymouthd.conf
+  sed -i -e 's/ShowDelay=.*/ShowDelay=1/g' \$pkgdir/etc/plymouth/plymouthd.conf
+  cp -r ../../beat \$pkgdir/usr/share/plymouth/themes
+}
+EOL
+sum1=$(md5sum lxdm-plymouth.service |  awk -F ' ' '{print $1}')
+cat > lxdm-plymouth.service <<EOL
+[Unit]
+Description=LXDE Display Manager
+Conflicts=getty@tty1.service
+After=systemd-user-sessions.service getty@tty1.service plymouth-quit.service
+
+[Service]
+ExecStart=/usr/sbin/lxdm
+Restart=always
+IgnoreSIGPIPE=no
+
+[Install]
+Alias=display-manager.service
+EOL
+sum2=$(md5sum lxdm-plymouth.service |  awk -F ' ' '{print $1}')
+sed -i -e "s/$sum1/$sum2/g" PKGBUILD
+makepkg -s
 mv *.pkg.tar.xz ../../localrepo/x86_64
-cd .. && cd ..
+cd ..
 
 echo
 echo -e $G" [*] All Packages Builted Successfully."$C
@@ -156,7 +185,7 @@ echo
 cd $DIR/localrepo/x86_64
 echo -e $Y" [*] Setting Up Local Repository - "$C
 echo
-repo-add localrepo.db.tar.gz aurafetch-git*.pkg.tar.xz compton-tryone-git*.pkg.tar.xz i3lock-fancier-git*.pkg.tar.xz ksuperkey*.pkg.tar.xz networkmanager-dmenu-git*.pkg.tar.xz obmenu-generator*.pkg.tar.xz perl-linux-desktopfiles*.pkg.tar.xz plymouth*.pkg.tar.xz polybar*.pkg.tar.xz rxvt-unicode-pixbuf*.pkg.tar.xz yay*.pkg.tar.xz
+repo-add localrepo.db.tar.gz *
 echo
 echo -e $Y" [*] Appending Repo Config in Pacman file - "$C
 echo
@@ -199,7 +228,7 @@ echo
 
 echo -e $Y" [*] Cleaning Up... "$C
 cd $DIR/pkgs
-rm -rf $PR1 $PR2 $PR3 $PR4 $PR5 $PR6 $PR7 $PR8 $PR9 $PR10
+rm -rf $PR1 $PR2 $PR3 $PR4 $PR5 $PR6 $PR7 $PR8 $PR9 $PR10 $PR11
 echo
 echo -e $R" [*] Setup Completed."
 echo

@@ -80,8 +80,12 @@ xfsprogs
 xl2tpd
 
 # Xorg Packages
-xorg
+xorg-server
+xorg-xbacklight
 xorg-fonts-misc
+xorg-xkill
+xorg-xrandr
+xorg-xrdb
 xorg-xfd
 
 # Intel Drivers
@@ -173,6 +177,7 @@ poppler-glib
 pulseaudio
 pulseaudio-alsa
 pulseaudio-equalizer
+pv
 ranger
 rofi
 scrot
@@ -181,6 +186,7 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
+ttf-dejavu
 tumbler
 udisks2
 unrar

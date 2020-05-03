@@ -33,7 +33,7 @@ systemctl enable lxdm-plymouth.service
 
 ## Mods
 sed -i -e 's/MODULES=()/MODULES=(i915)/g' /etc/mkinitcpio.conf
-sed -i -e 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)/HOOKS=(base udev plymouth block filesystems keyboard)/g' /etc/mkinitcpio.conf
+sed -i -e 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)/HOOKS=(base udev plymouth plymouth-encrypt block filesystems keyboard)/g' /etc/mkinitcpio.conf
 #sed -i -e 's/Loading Linux %s .../ /g' /etc/grub.d/10_linux
 #sed -i -e 's/Loading initial ramdisk .../ /g' /etc/grub.d/10_linux
 sed -i -e 's/Inherits=.*/Inherits=Papirus,Adwaita,gnome,hicolor/g' /usr/share/icons/Arc/index.theme

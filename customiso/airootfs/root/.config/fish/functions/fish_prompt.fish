@@ -53,10 +53,9 @@ set fish_pager_color_prefix cyan
 set fish_pager_color_progress cyan
 
 ## Aliases
-alias l "ls -lh"
-alias la "ls -a"
-alias ll "ls -alh"
-alias ls "ls --group-directories-first"
+alias l "ls -lh --group-directories-first --color=always"
+alias la "ls -a --color=always"
+alias ll "ls -alh --color=always"
 alias grep "grep --color=auto"
 alias xfd "xfd -geometry 1100x700+10+10"
 alias neo "neofetch --config ~/.config/neofetch/config-image.conf --w3m --source auto"

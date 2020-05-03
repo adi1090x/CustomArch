@@ -1437,7 +1437,14 @@ install_root(){
 	 umount -l ${BYPASS}
   else
      AIROOTIMG="/run/archiso/sfs/airootfs/"
-     rsync -a --progress ${AIROOTIMG} ${MOUNTPOINT}/ 2>/tmp/.errlog
+
+	 # set the counter for pv data
+     counter=$(find /run/archiso/sfs/airootfs/ | wc -l)
+
+	 # give rsync a progress bar as we install using pv and dialog
+     rsync -av --no-i-r ${AIROOTIMG} ${MOUNTPOINT}/ 2>/tmp/.errlog | \
+     pv -len --size ${counter} --interval 1.0 2>&1 >/dev/null | \
+     dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title "$VERSION - $SYSTEM ($ARCHI)" --gauge "\n$INSTALLTEXT" 10 75
   fi
 
   check_for_error
