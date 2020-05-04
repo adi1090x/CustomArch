@@ -77,25 +77,26 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 - [ ] Disable auto updates
 
 Open the terminal & clone this repo 
-```
+```bash
 git clone https://github.com/adi1090x/archlinux.git
 ```
 
 After cloning, run *'setup.sh'*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
-```
+```bash
 cd archlinux
 chmod +x setup.sh
 ./setup.sh
 ```
 
 Now, Change to *'customiso'* directory & get ***ROOT*** & Run *'build.sh'*
-```
+```bash
 cd customiso
 sudo su
 ./build.sh -v
 ```
 
 If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
+
 If you want to Rebuild the ISO, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only. 
 <br />
 
@@ -119,7 +120,7 @@ menuentry 'Arch Linux Live' --class arch --class gnu-linux --class linux {
 <br />
 
 **2. Using dd -** Alternatively, you can use ***dd*** command to make a bootable USB_Drive/SDcard, Just open the terminal and... <br />
-```
+```bash
 sudo su
 dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 ```
@@ -175,7 +176,7 @@ Lxdm|eDEX-UI
 <img align="right" width="300" src="https://raw.githubusercontent.com/adi1090x/archlinux/master/images/install.jpeg"> This ISO can be installed, Offline, thanks to [ABIF](https://github.com/adi1090x/archlinux/tree/master/customiso/airootfs/abif-master). I've tested & installed it on a **USB Drive, SDcard, HDD & Virtualbox**, works as expected. Just Don't forget to install *virtualbox guest additions* after installing it on [vbox](https://github.com/adi1090x/archlinux/blob/master/images/vbox/README.md).
 <br />
 <br />
-The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've made a step by step guide on how to install it - [Here, How To Install It.](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
+The installer is very simple and easy to use, but what if you're still a *windows* guy or a *softcore linux user* (Coz arch is for **Hardcore linux users**, Did you get it? NEVERMIND :P). So i've created a step by step guide on how to install it - [Here, How To Install It.](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
 <br />
 
 ### Support This Project
@@ -187,7 +188,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 
 ## Few Words
 
-+ I'm really bad at *Naming Things*, So i've keep it simple - just ***Archlinux***. 
++ I'm really bad at *Naming Things*, So i've kept it simple - just ***Archlinux***. 
 + Default **username** and **password** is ***liveuser*** (Live ISO Only).
 + After installing this ISO, run ```sudo pacman -Syy``` to fix pacman. it'll just download packages database.
 + In this ISO, I've enabled **encryption settings (luks/dm-crypt)** by default. If you're installing it without encryption, there will be no issue, but these settings are useless for you in this case. So after normal installation, comment out `GRUB_ENABLE_CRYPTODISK=y` in */etc/default/grub* and remove `plymouth-encrypt` hook in */etc/mkinitcpio.conf* and rebuilt initrd.
