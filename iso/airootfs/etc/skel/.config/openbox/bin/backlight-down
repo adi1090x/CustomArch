@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xbacklight -dec 10 && pkill dunst && dunstify -u low -i /usr/share/icons/Hybrid/actions/24/whitebalance.svg "Brightness Dec : $(~/.config/openbox/bin/backlight)%"

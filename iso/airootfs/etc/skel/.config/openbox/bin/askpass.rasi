@@ -1,0 +1,18 @@
+* {
+    background-color:	#212B30;
+    text-color:         #4DD0E1;
+    passwd:				#EC407A;
+    font:            	"scientifica 8";
+}
+
+#window {
+    width:      		300px;
+    y-offset: 			-8%;
+    padding:    		30px;
+}
+
+#entry {
+    expand: 			true;
+    width: 				150px;
+    text-color:			@passwd;
+}

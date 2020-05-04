@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=miniloop
+Description=display a beautiful colorful loop
+Comment=created By Aditya Shakya (@adi1090x)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/miniloop
+ScriptFile=/usr/share/plymouth/themes/miniloop/miniloop.script

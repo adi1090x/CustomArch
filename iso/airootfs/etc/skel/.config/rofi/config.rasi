@@ -1,0 +1,7 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  cycle:              false;
+  hide-scrollbar:     true;
+  disable-history:    false;
+}

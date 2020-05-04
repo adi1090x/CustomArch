@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Install Archlinux
+Comment=Abif Installer
+Exec=/home/liveuser/.config/openbox/bin/apps_as_root.sh "termite -e /abif-master/abif"
+Icon=distributor-logo-archlinux
+Type=Application
+Categories=System;Settings;

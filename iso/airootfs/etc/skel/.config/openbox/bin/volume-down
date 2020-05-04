@@ -1,0 +1,3 @@
+#!/bin/bash
+
+amixer -Mq set Master,0 5%- unmute && pkill dunst && dunstify -u low -i /usr/share/icons/Hybrid/status/24/audio-volume-medium.svg "Volume Down : $(~/.config/openbox/bin/volume)%"

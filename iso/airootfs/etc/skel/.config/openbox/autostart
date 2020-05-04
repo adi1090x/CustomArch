@@ -1,0 +1,30 @@
+## Restore Wallpaper
+nitrogen --restore
+
+## Start Compositing Manager
+exec picom -b &
+
+## Launch Polybar
+sh ~/.config/polybar/launch.sh
+
+## Start Music Player Daemon
+exec mpd &
+
+## Notification Daemon
+exec dunst &
+
+## Thunar Daemon
+exec thunar --daemon &
+
+## Enable Super Keys For Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+## xfce4-settings daemon
+xfsettingsd &
+
+## Enable power management
+xfce4-power-manager &
+
+## About
+#sleep 4 && /usr/local/bin/about.sh
