@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
+An Arch Linux Based Custom ISO Made With <b>Archiso</b>, Specially for newbies and DIY enthusiasts.
 </p>
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
