@@ -78,7 +78,7 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 
 Open the terminal & clone this repo 
 ```bash
-git clone https://github.com/adi1090x/archlinux.git
+git clone --single-branch --branch master --depth=1 https://github.com/adi1090x/archlinux.git archlinux
 ```
 
 After cloning, run *'setup.sh'*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
