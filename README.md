@@ -14,7 +14,9 @@
 <a href="https://ko-fi.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/kofi.png" alt="Support me on ko-fi"></a>
 </p>
 
+<p align="center">
 An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies and DIY enthusiasts.
+</p>
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
 
@@ -76,29 +78,28 @@ An Arch Linux Based Custom ISO Made With ***Archiso***, Specially for newbies an
 - [ ] Configure everything as *root*
 - [ ] Disable auto updates
 
-Open the terminal & clone this repo 
++ Open the terminal & clone this repo 
 ```bash
 git clone --single-branch --branch master --depth=1 https://github.com/adi1090x/archlinux.git archlinux
 ```
 
-After cloning, run *'setup.sh'*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
++ After cloning, run *'setup.sh'*, it'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!
 ```bash
 cd archlinux
 chmod +x setup.sh
 ./setup.sh
 ```
 
-Now, Change to *'customiso'* directory & get ***ROOT*** & Run *'build.sh'*
++ Now, Change to *'customiso'* directory & get ***ROOT*** & Run *'build.sh'*
 ```bash
 cd customiso
 sudo su
 ./build.sh -v
 ```
 
-If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
++ If everything goes well, you'll have the ISO in *'customiso/out'* directory. <br />
 
-If you want to Rebuild the ISO, remove ***'work'*** & ***'out'*** dirs inside *'customiso'* directory first. then run ```./build.sh -v``` as *root*. You don't need to run *'setup.sh'* again, it's a one time process only. 
-<br />
+> If you want to Rebuild the ISO, remove ***work*** & ***out*** dirs inside `customiso` directory first. then run `./build.sh -v` as **root**. You don't need to run *'setup.sh'* again, it's a one time process only. 
 
 ## Boot The ISO
 
