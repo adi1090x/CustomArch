@@ -66,7 +66,7 @@ An Arch Linux Based Custom ISO Made With <b>Archiso</b>, Specially for newbies a
 
 **1. Download -** You can either download already generated ISO file, or...
 <p align="center">
-  <a href="https://www.dropbox.com/sh/vv5a0apzu8zlqnk/AADaIX6pXSqQcLhvDiiNOWkha?dl=0" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=dropbox"></a>
+  <a href="https://mega.nz/folder/jlJDEK5C#cTuEuQsG-ogAxxeSEIGjiA" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Mega-Download-red?style=for-the-badge&logo=mega"></a>
 </p>
   
 **2. Build ISO -** If you're already using archlinux & want to build the iso, maybe with your config then...
