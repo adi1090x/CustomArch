@@ -1,22 +1,19 @@
-![logo](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/logo.png) <br />
+# Custom Arch Linux V1.0
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/adi1090x/archlinux?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=violet&style=for-the-badge">
   <img src="https://img.shields.io/github/forks/adi1090x/archlinux?color=teal&style=for-the-badge">
   <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
-<!--  <img src="https://img.shields.io/github/downloads/adi1090x/archlinux/total.svg?style=for-the-badge"> -->
 </p>
 
-<p align="center">
+<p align="left">
 <a href="https://www.buymeacoffee.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/bmac.png" alt="Buy Me A Coffee"></a>
 <a href="https://ko-fi.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/kofi.png" alt="Support me on ko-fi"></a>
 </p>
 
-<p align="center">
-An <a href="https://www.archlinux.org">Arch Linux</a> Based Custom ISO Made With <b>Archiso</b>, Specially for newbies and DIY enthusiasts.
-</p>
+An [Arch Linux](https://www.archlinux.org) Based Custom ISO Made With <b>Archiso</b>, Specially for newbies and DIY enthusiasts.
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
 
