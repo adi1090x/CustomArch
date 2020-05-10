@@ -1,4 +1,4 @@
-# Arch Linux V2.0
+# Custom Arch Linux V2.0
 
 <p align="left">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
@@ -13,7 +13,7 @@
 <a href="https://ko-fi.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/kofi.png" alt="Support me on ko-fi"></a>
 </p>
 
-Second version of my custom ISO based on `Arch Linux`, made with **Archiso**... (for newbies and DIY enthusiasts)
+Second version of my custom ISO based on [Arch Linux](https://www.archlinux.org), made with **Archiso**... (for newbies and DIY enthusiasts)
 
 ![gif](images/main.gif) <br />
 
@@ -289,4 +289,5 @@ Tiling 3|Tiling 4
 + While installing it on the USB, installer seems like it freezed when grub was installing. Problem it - `os-prober` was taking a long time to detect other OS installed on system. it took 10-12 mins to complete. on other media (SDcard & HDD), there was no such issue. Maybe it's a bug related to os-prober, thought i should mention it here. if you face it, pls wait!
 + It's a 64-bit only ISO/OS.
 + ***Updates:*** Well, the best things is, you'll always get the latest Linux kernel, Archlinux System & Packages, if you `build it`. if you can't, Then Install this ISO, run `sudo pacman -Sy archlinux-keyring && sudo pacman -Syu` & DONE, you'll have the latest Arch Linux system.
++ This project is just a derivative of Arch Linux, It's Not [Arch Linux](https://www.archlinux.org) itself.
 + Share this **repo** with your friends/classmates/colleagues who're new to linux/Archlinux.
