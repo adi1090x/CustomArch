@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-An Arch Linux Based Custom ISO Made With <b>Archiso</b>, Specially for newbies and DIY enthusiasts.
+An <a href="https://www.archlinux.org">Arch Linux</a> Based Custom ISO Made With <b>Archiso</b>, Specially for newbies and DIY enthusiasts.
 </p>
 
 ![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/animation.gif) <br />
@@ -201,6 +201,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 + It's a 64-bit only ISO/OS.
 + ***Updates:*** Well, the best things is, you'll always get the latest Linux kernel, Archlinux System & Packages, only if you *build it*. if you can't, well i'll try to update the ISO **Every 3rd Month**. And TBH, updating arch is very simple, you can install the ISO, and ```sudo pacman -Syu```, That's it... DONE!
 + Arch is not beginner's friendly OS, so if it's your first time with arch linux... *your welcome*, i've made it easy for you. JUST KIDDING... But sure, you're gonna learn a lot with this ISO, & specially by *it's Source*, it'll give you a picture of how a linux system works.
++ This project is just a derivative of Arch Linux, It's Not [Arch Linux](https://www.archlinux.org) itself.
 + Share this **repo** with your friends/classmates/colleagues who're new to linux/Archlinux.
 
 <!--
