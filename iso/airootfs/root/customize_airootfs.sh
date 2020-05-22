@@ -27,17 +27,14 @@ systemctl set-default graphical.target
 ## Services
 systemctl enable NetworkManager.service 
 systemctl enable wpa_supplicant.service
-systemctl enable lightdm-plymouth.service
+systemctl enable sddm.service
 
 ## Mods
 sed -i -e 's/MODULES=()/MODULES=(i915)/g' /etc/mkinitcpio.conf
 sed -i -e 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)/HOOKS=(base udev plymouth plymouth-encrypt block filesystems keyboard)/g' /etc/mkinitcpio.conf
-sed -i -e 's/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
-#sed -i -e 's/#minimum-vt=.*/minimum-vt=1/g' /etc/lightdm/lightdm.conf
+
 
 ## Other
-rm -rf /usr/share/xsessions/openbox-kde.desktop
-rm -rf /usr/share/applications/xfce4-about.desktop
 mv /etc/zsh/zshrc /etc/zsh/zshrc.org
 
 ## Remove localrepo lines
