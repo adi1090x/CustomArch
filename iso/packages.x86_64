@@ -2,50 +2,31 @@
 arch-install-scripts
 b43-fwcutter
 broadcom-wl
-btrfs-progs
-clonezilla
 crda
-darkhttpd
 ddrescue
 dhclient
-dhcpcd
 dialog
 diffutils
-dmraid
 dnsmasq
 dnsutils
-dosfstools
-elinks
 ethtool
 exfat-utils
 f2fs-tools
 fsarchiver
-gnu-netcat
 gpm
 gptfdisk
 grml-zsh-config
 grub
 hdparm
-ipw2100-fw
-ipw2200-fw
-irssi
 iwd
-jfsutils
-lftp
 linux-atm
 linux-firmware
-lsscsi
-lvm2
 man-db
 man-pages
 mc
-mdadm
-mtools
 nano
 ndisc6
-netctl
 nfs-utils
-nilfs-utils
 nmap
 ntfs-3g
 ntp
@@ -56,29 +37,18 @@ partclone
 parted
 partimage
 ppp
-pptpclient
 refind-efi
-reiserfsprogs
-rp-pppoe
 rsync
-sdparm
 sg3_utils
 smartmontools
 sudo
-tcpdump
 testdisk
 usb_modeswitch
 usbutils
-vi
-vim-minimal
-vpnc
 wget
 wireless-regdb
 wireless_tools
 wpa_supplicant
-wvdial
-xfsprogs
-xl2tpd
 
 # Xorg Packages
 xorg-server
@@ -87,80 +57,64 @@ xorg-fonts-misc
 xorg-xkill
 xorg-xrandr
 xorg-xrdb
+xorg-xfd
 
-# Intel Drivers
-xf86-video-intel
+# AMD Drivers
+xf86-video-mesa
+xf86-video-amdgpu
 
 # Networking
+modemmanager
+mobile-broadband-provider-info
 networkmanager
-nm-connection-editor
+usb_modeswitch
 
-# Openbox
-obconf
-openbox
-adapta-gtk-theme
+# plasma
+plasma
+plasma-wayland-session
+sddm
 
 # Programs
-alsa-plugins
-alsa-tools
-alsa-utils
-atril
+autoconf
+automake
+bind-tools
+binutils
 bmon
-calc
-dunst
 fakeroot
-feh
-ffmpeg
-ffmpegthumbnailer
-geany
+gcc
+git
 gparted
+gtk-engine-murrine
+gtk-engines
+gtk2+extra
 gvfs
 gvfs-mtp
+gvfs-afc
+hsetroot
 htop
 imagemagick
 inetutils
-jq
-leafpad
-lightdm
-lightdm-gtk-greeter
-midori
-mpc
-mpd
-mplayer
-ncdu
-ncmpcpp
+make
 neofetch
-nitrogen
+nmon
 os-prober
 p7zip
 patch
+pavucontrol
 pkg-config
-picom
 polkit
+poppler-glib
 pulseaudio
 pulseaudio-alsa
+pulseaudio-equalizer
 pv
-ranger
-rofi
-scrot
-termite
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
 ttf-dejavu
-tumbler
 udisks2
 unrar
 unzip
-viewnior
 vim
-xarchiver
-xclip
 xdg-user-dirs
-xfce4-power-manager
-xfce4-settings
-zip
+zenity
 
 ## Virtual Box
 virtualbox-guest-dkms
@@ -168,12 +122,10 @@ virtualbox-guest-utils
 linux-headers
 
 ## AUR
-colorpicker
-i3lock-fancier-git
-ksuperkey
-networkmanager-dmenu-git
-obmenu-generator
-perl-linux-desktopfiles
-polybar
 plymouth
 yay
+rtl8821ce-dkms-git
+atom-editor-beta-bin
+code-git
+pycharm-professional
+discord
