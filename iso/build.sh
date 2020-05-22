@@ -4,8 +4,8 @@ set -e -u
 
 iso_name=archlinux
 iso_label="archlinux_$(date +%Y%m)"
-iso_publisher="Aditya Shakya <http://www.github.com/adi1090x>"
-iso_application="A Minimal Arch Linux ISO"
+iso_publisher="Roman Chursanov <http://www.github.com/authfailed>"
+iso_application="Plasmarch"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work
