@@ -10,7 +10,7 @@
 configuration {
     font:                           "scientifica 8";
     show-icons:                     false;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Hybrid";
     display-drun: 					"Search";
     drun-display-format:            "{name}";
     threads:                        0;

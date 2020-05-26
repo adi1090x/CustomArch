@@ -10,7 +10,7 @@
 configuration {
     font:                           "scientifica 8";
     show-icons:                     false;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Hybrid";
     display-drun: 					":";
     drun-display-format:            "{name}";
     threads:                        0;
@@ -30,7 +30,6 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border-radius:                  0px;
-    height:                         30%;
     width:                          20%;
     x-offset:                       -0.8%;
     y-offset:                       5%;

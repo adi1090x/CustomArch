@@ -430,6 +430,11 @@
         <command>~/.config/openbox/bin/color_picker</command>
       </action>
     </keybind>
+    <keybind key="W-v">
+      <action name="Execute">
+        <command>~/.config/openbox/bin/tasks</command>
+      </action>
+    </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
         <command>termite -c ~/.config/termite/config_easy</command>
@@ -437,7 +442,7 @@
     </keybind>
     <keybind key="C-A-l">
       <action name="Execute">
-        <command>i3lock</command>
+        <command>betterlockscreen --lock</command>
       </action>
     </keybind>
     <keybind key="C-A-v">

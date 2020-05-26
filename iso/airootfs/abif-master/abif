@@ -20,13 +20,13 @@
 #															#
 
 # This MUST be the same as listed in /etc/hosts
-ISO_HOST="archlinux"                           		# ISO Host Name
+ISO_HOST="CustomArch"                           		# ISO Host Name
 
 # This MUST be the same as the live account
 ISO_USER="liveuser"           						# Live user account.
 
 # Call this what you like
-VERSION="Arch Linux Installer"						# Installer Name / Version
+VERSION="Custom Arch Linux Installer"						# Installer Name / Version
 
 # This should not need to be changed
 TRANS_SRC="/abif-master"							# Dir where translation files are stored
@@ -1502,8 +1502,8 @@ install_root(){
   [[ -e /tmp/01-keyboard-layout.conf ]] && cp -f /tmp/01-keyboard-layout.conf ${MOUNTPOINT}/etc/X11/xorg.conf.d/$(ls ${MOUNTPOINT}/etc/X11/xorg.conf.d/ | grep "keyboard") 2>>/tmp/.errlog
   
   # Display Manager
-  arch_chroot "systemctl enable lightdm-plymouth" 2>>/tmp/.errlog
-  cp -f /inst/lightdm.conf ${MOUNTPOINT}/etc/lightdm/lightdm.conf 2>>/tmp/.errlog
+  arch_chroot "systemctl enable lxdm-plymouth" 2>>/tmp/.errlog
+  cp -f /inst/lxdm.conf ${MOUNTPOINT}/etc/lxdm/lxdm.conf 2>>/tmp/.errlog
   [[ -d ${MOUNTPOINT}/inst ]] && rm -R ${MOUNTPOINT}/inst &> /dev/null 2>>/tmp/.errlog
   check_for_error
   
@@ -1899,7 +1899,7 @@ edit_configs() {
    "7" "/etc/fstab" \
    "8" "/etc/crypttab" \
    "9" "grub/syslinux/systemd-boot" \
-   "10" "/etc/lightdm/lightdm.conf" \
+   "10" "/etc/lxdm/lxdm.conf" \
    "11" "/etc/pacman.conf" \
    "12" "$_Back" 2>${ANSWER}
 	
@@ -1931,7 +1931,7 @@ edit_configs() {
 				done
 			 fi
             ;;
-        "10") [[ -e ${MOUNTPOINT}/etc/lightdm/lightdm.conf ]] && FILE="${MOUNTPOINT}/etc/lightdm/lightdm.conf" 
+        "10") [[ -e ${MOUNTPOINT}/etc/lxdm/lxdm.conf ]] && FILE="${MOUNTPOINT}/etc/lxdm/lxdm.conf" 
             ;;
         "11") [[ -e ${MOUNTPOINT}/etc/pacman.conf ]] && FILE="${MOUNTPOINT}/etc/pacman.conf"
 			;;

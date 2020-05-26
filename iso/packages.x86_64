@@ -84,6 +84,7 @@ xl2tpd
 xorg-server
 xorg-xbacklight
 xorg-fonts-misc
+xorg-xfd
 xorg-xkill
 xorg-xrandr
 xorg-xrdb
@@ -100,11 +101,18 @@ obconf
 openbox
 adapta-gtk-theme
 
+# Bspwm
+bspwm
+sxhkd
+arc-gtk-theme
+arc-icon-theme
+
 # Programs
 alsa-plugins
 alsa-tools
 alsa-utils
 atril
+binutils
 bmon
 calc
 dunst
@@ -112,6 +120,7 @@ fakeroot
 feh
 ffmpeg
 ffmpegthumbnailer
+gcc
 geany
 gparted
 gvfs
@@ -121,8 +130,9 @@ imagemagick
 inetutils
 jq
 leafpad
-lightdm
-lightdm-gtk-greeter
+lxappearance
+lxdm
+make
 midori
 mpc
 mpd
@@ -134,6 +144,7 @@ nitrogen
 os-prober
 p7zip
 patch
+pcmanfm
 pkg-config
 picom
 polkit
@@ -144,6 +155,7 @@ ranger
 rofi
 scrot
 termite
+terminus-font-otb
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -169,7 +181,7 @@ linux-headers
 
 ## AUR
 colorpicker
-i3lock-fancier-git
+betterlockscreen
 ksuperkey
 networkmanager-dmenu-git
 obmenu-generator

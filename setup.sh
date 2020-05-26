@@ -13,7 +13,7 @@ Y='\033[1;33m'
 
 DIR="$(pwd)"
 PKG1="colorpicker"
-PKG2="i3lock-fancier-git"
+PKG2="betterlockscreen"
 PKG3="ksuperkey"
 PKG4="networkmanager-dmenu-git"
 PKG5="obmenu-generator"
@@ -56,8 +56,8 @@ echo
 echo -e $Y"[*] Cloning colorpicker - "$C
 git clone https://aur.archlinux.org/colorpicker.git --depth 1 $PKG1
 echo
-echo -e $Y" [*] Cloning i3lock-fancier-git - "$C
-git clone https://aur.archlinux.org/i3lock-fancier-git.git --depth 1 $PKG2
+echo -e $Y" [*] Cloning betterlockscreen - "$C
+git clone https://aur.archlinux.org/betterlockscreen.git --depth 1 $PKG2
 echo
 echo -e $Y"[*] Cloning ksuperkey - "$C
 git clone https://aur.archlinux.org/ksuperkey.git --depth 1 $PKG3
@@ -121,7 +121,7 @@ cd ..
 
 echo -e $Y"[*] Building $PKG7 - "$C
 cd $PKG7
-cp -r $DIR/pkgs/miniloop $DIR/pkgs/plymouth
+cp -r $DIR/pkgs/miniloop $DIR/pkgs/$PKG7
 sed -i '$d' PKGBUILD
 cat >> PKGBUILD <<EOL
   sed -i -e 's/Theme=.*/Theme=miniloop/g' \$pkgdir/etc/plymouth/plymouthd.conf
@@ -129,6 +129,23 @@ cat >> PKGBUILD <<EOL
   cp -r ../../miniloop \$pkgdir/usr/share/plymouth/themes
 }
 EOL
+sum1=$(md5sum lxdm-plymouth.service |  awk -F ' ' '{print $1}')
+cat > lxdm-plymouth.service <<EOL
+[Unit]
+Description=LXDE Display Manager
+Conflicts=getty@tty1.service
+After=systemd-user-sessions.service getty@tty1.service plymouth-quit.service
+
+[Service]
+ExecStart=/usr/sbin/lxdm
+Restart=always
+IgnoreSIGPIPE=no
+
+[Install]
+Alias=display-manager.service
+EOL
+sum2=$(md5sum lxdm-plymouth.service |  awk -F ' ' '{print $1}')
+sed -i -e "s/$sum1/$sum2/g" PKGBUILD
 makepkg -s
 mv *.pkg.tar.xz ../../localrepo/x86_64
 cd ..

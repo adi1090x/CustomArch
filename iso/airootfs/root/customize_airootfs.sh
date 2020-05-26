@@ -27,13 +27,19 @@ systemctl set-default graphical.target
 ## Services
 systemctl enable NetworkManager.service 
 systemctl enable wpa_supplicant.service
-systemctl enable lightdm-plymouth.service
+systemctl enable lxdm-plymouth.service
+systemctl enable betterlockscreen@$USER
 
 ## Mods
 sed -i -e 's/MODULES=()/MODULES=(i915)/g' /etc/mkinitcpio.conf
 sed -i -e 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)/HOOKS=(base udev plymouth plymouth-encrypt block filesystems keyboard)/g' /etc/mkinitcpio.conf
-sed -i -e 's/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
-#sed -i -e 's/#minimum-vt=.*/minimum-vt=1/g' /etc/lightdm/lightdm.conf
+cp /usr/bin/networkmanager_dmenu /usr/local/bin/nmd && sed -i 's/config.ini/nmd.ini/g' /usr/local/bin/nmd
+sed -i -e 's/Inherits=.*/Inherits=Hybrid,Papirus,Moka,Adwaita,hicolor/g' /usr/share/icons/Arc/index.theme
+
+## Lightdm
+# systemctl enable lightdm-plymouth.service
+# sed -i -e 's/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
+# sed -i -e 's/#minimum-vt=.*/minimum-vt=1/g' /etc/lightdm/lightdm.conf
 
 ## Other
 rm -rf /usr/share/xsessions/openbox-kde.desktop

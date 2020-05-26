@@ -233,5 +233,5 @@ main() {
 # running
 trap "" SIGTSTP
 
-trap pre_exit EXIT
+trap EXIT
 main

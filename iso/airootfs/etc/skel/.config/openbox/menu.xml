@@ -238,7 +238,7 @@
 		<separator/>
 		<item label="Lock Screen">
 			<action name="Execute">
-				<command>i3lock</command>
+				<command>betterlockscreen --lock</command>
 			</action>
 		</item>
 		<menu id="obExit" label="Exit Openbox">

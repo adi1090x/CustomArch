@@ -9,10 +9,10 @@
 
 configuration {
     font:                           "scientifica 8";
-    show-icons:                     false;
-	icon-theme: 					"Papirus";
+    show-icons:                     true;
+	icon-theme: 					"Hybrid";
     display-drun: 					"Search :";
-    drun-display-format:            "{name}";
+    drun-display-format:            "{icon} {name}";
     threads:                        0;
     scroll-method:                  0;
     disable-history:                false;
@@ -28,7 +28,6 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border-radius:                  0px;
-    height:                         33%;
     width:                          30%;
     location:                       center;
     anchor:                         center;
@@ -87,6 +86,7 @@ case-indicator {
 listview {
     background-color:               @background;
     columns:                        1;
+    lines:							8;
     spacing:                        4px;
     cycle:                          false;
     dynamic:                        true;

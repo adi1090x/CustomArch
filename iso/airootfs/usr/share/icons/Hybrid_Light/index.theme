@@ -3,7 +3,7 @@ Name=Hybrid_Light
 Comment=Mixture of Breeze And Luv
 DisplayDepth=32
 
-Inherits=Adwaita,hicolor,Papirus
+Inherits=Papirus,Adwaita,hicolor
 
 Example=folder
 

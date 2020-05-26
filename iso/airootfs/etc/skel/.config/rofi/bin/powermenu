@@ -42,14 +42,14 @@ case $chosen in
         fi
         ;;
     $lock)
-        i3lock
+        betterlockscreen --lock
         ;;
     $suspend)
 		ans=$($HOME/.config/openbox/bin/confirm.sh)
 		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
         mpc -q pause
         amixer set Master mute
-        systemctl suspend
+        betterlockscreen --suspend
 		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
         exit
         else

@@ -2,8 +2,8 @@
 
 set -e -u
 
-iso_name=archlinux
-iso_label="archlinux_$(date +%Y%m)"
+iso_name=CustomArch
+iso_label="CustomArch_$(date +%Y%m)"
 iso_publisher="Aditya Shakya <http://www.github.com/adi1090x>"
 iso_application="A Minimal Arch Linux ISO"
 iso_version=$(date +%Y.%m.%d)
