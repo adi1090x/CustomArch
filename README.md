@@ -1,6 +1,6 @@
-# Custom Arch Linux V2.0
+![gif](https://raw.githubusercontent.com/adi1090x/archlinux/master/images/banner.png)
 
-<p align="left">
+<p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/license/adi1090x/archlinux?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/adi1090x/archlinux?color=violet&style=for-the-badge">
@@ -8,12 +8,14 @@
   <img src="https://img.shields.io/github/stars/adi1090x/archlinux?style=for-the-badge">
 </p>
 
-<p align="left">
+<p align="center">
 <a href="https://www.buymeacoffee.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/bmac.png" alt="Buy Me A Coffee"></a>
 <a href="https://ko-fi.com/adi1090x"><img src="https://raw.githubusercontent.com/adi1090x/files/master/other/kofi.png" alt="Support me on ko-fi"></a>
 </p>
 
-Second version of my custom ISO based on [Arch Linux](https://www.archlinux.org), made with **Archiso**... (for newbies and DIY enthusiasts)
+<p align="center">
+Second version of my custom ISO based on <a href="https://www.archlinux.org">Arch Linux</a>, made with <b>Archiso</b>... (for newbies and DIY enthusiasts)
+</p>
 
 ![gif](images/main.gif) <br />
 
