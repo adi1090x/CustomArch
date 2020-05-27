@@ -52,60 +52,75 @@ Tiling 3|Tiling 4
 
 `Workspaces`
 
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+1**|Go To Desktop 1|&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;|**W+2**|Go To Desktop 2|
-|**W+3**|Go To Desktop 3||**W+4**|Go To Desktop 4|
-|**W+S+1**|Send To Desktop 1||**W+S+2**|Send To Desktop 2|
-|**W+S+3**|Send To Desktop 3||**W+S+4**|Send To Desktop 4|
-|**W+S+Left**|Send To Desktop Left||**W+S+Right**|Send To Desktop Right|
++ **W + 1/2/3/4/5** : Go To Desktop 1/2/3/4/5
++ **W + S + 1/2/3/4/5** : Send To Desktop 1/2/3/4/5
++ **W + S + Left/Right** : Send To Desktop Left/Right
 
 `Windows`
 
-|Key|Action|&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;|Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+Tab**|Next Window (All Desktop)||**A+Tab**|Next Window (Current Desktop)|
-|**W+Left**|Move To Edge West||**W+Right**|Move To Edge Eest|
-|**W+Up**|Maximize Full||**W+Down**|Unmaximize 60x80|
-|**W+h**|Top Left||**W+j**|Bottom Left|
-|**W+k**|Top Right||**W+l**|Bottom Right|
-|**W+KP_1**|Bottom Left 50x50||**W+KP_7**|Top Left 50x50|
-|**W+KP_3**|Bottom Right 50x50||**W+KP_9**|Top Right 50x50|
-|**W+KP_2**|Bottom 100x50||**W+KP_8**|Top 100x50|
-|**W+KP_4**|Left 50x100||**W+KP_6**|Right 50x100|
-|**W+A+Up**|Move Up||**W+A+Down**|Move Down|
-|**W+A+Left**|Move Left||**W+A+Right**|Move Right|
-|**C+A+Up**|Resize to Up||**C+A+Down**|Resize to Down|
-|**C+A+Left**|Resize to Left||**C+A+Right**|Resize to Right|
-|**A+r**|Toggle Resize||**A+m**|Toggle Move|
-|**A+F4**|Close Window||**A+F5**|Minimize Window|
-|**A+F6**|Maximize Window||**A+F7**|Toggle Decorations|
++ **W + Tab** : Next Window (All Desktop)
++ **A + Tab** : Next Window (Current Desktop)
++ **W + Left** : Move To Edge West
++ **W + Right** : Move To Edge Eest
++ **W + Up** : Maximize Full
++ **W + Down** : Unmaximize 60x80
++ **W + h** : Top Left
++ **W + j** : Bottom Left
++ **W + k** : Top Right
++ **W + l** : Bottom Right
++ **W + KP_1** : Bottom Left 50x50
++ **W + KP_7** : Top Left 50x50
++ **W + KP_3** : Bottom Right 50x50
++ **W + KP_9** : Top Right 50x50
++ **W + KP_2** : Bottom 100x50
++ **W + KP_8** : Top 100x50
++ **W + KP_4** : Left 50x100
++ **W + KP_6** : Right 50x100
++ **W + A + Up** : Move Up
++ **W + A + Down** : Move Down
++ **W + A + Left** : Move Left
++ **W + A + Right** : Move Right
++ **C + A + Up** : Resize to Up
++ **C + A + Down** : Resize to Down
++ **C + A + Left** : Resize to Left
++ **C + A + Right** : Resize to Right
++ **A + r** : Toggle Resize
++ **A + m** : Toggle Move
++ **A + F4** : Close Window
++ **A + F5** : Minimize Window
++ **A + F6** : Maximize Window
++ **A + F7** : Toggle Decorations
 
 `System`
 
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**XF86AudioRaiseVolume**|Increase Volume||**XF86AudioLowerVolume**|Decrease Volume|
-|**XF86MonBrightnessUp**|Increase Brightness||**XF86MonBrightnessDown**|Decrease Brightness|
-|**Print**|Take a screenshot||**A+Print**|Take a screenshot in 5 Sec|
-|**C-S-Escape**|Exit WM||**C-S-BackSpace**|Restart Openbox|
-|**C-S-R**|Reconfigure Openbox||**W-Escape**|Kill App|
-|**W+d**|Show Desktop||**W+space**|Root Menu|
++ **XF86AudioRaiseVolume** : Increase Volume
++ **XF86AudioLowerVolume** : Decrease Volume
++ **XF86MonBrightnessUp** : Increase Brightness
++ **XF86MonBrightnessDown** : Decrease Brightness
++ **Print** : Take a screenshot
++ **A + Print** : Take a screenshot in 5 Sec
++ **C + S + Escape** : Exit WM
++ **C + S + BackSpace** : Restart Openbox
++ **C + S + R** : Reconfigure Openbox
++ **W + Escape** : Kill App
++ **W + d** : Show Desktop
++ **W + space** : Root Menu
 
 `Applications`
 
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+e**|Text Editor `geany`||**W+f**|File Manager `thunar`|
-|**W+t**|Terminal Emulator `termite`||**W+w**|Web Browser `midori`|
-|**W+n**|Network Menu||**W+m**|MPD Menu|
-|**W+x**|Power Menu||**W+r**|App Runner|
-|**W+s**|Screenshot Menu||**W+i**|Internet Menu|
-|**W+c**|Colorpicker||**W**|App Launcher|
-|**C+A+l**|Lockscreen `i3lcok`||**C+A+v**|CLI editor `vim`|
-|**C+A+r**|CLI File Manager `ranger`||**C+A+h**|System Monitor `htop`|
-
++ **W + e** : Text Editor `geany`
++ **W + f** : File Manager `thunar`
++ **W + t** : Terminal Emulator `termite`
++ **W + w** : Web Browser `midori`
++ **W + n** : Network Menu
++ **W + m** : MPD Menu
++ **W + x** : Power Menu
++ **W + r** : App Runner
++ **W + s** : Screenshot Menu
++ **W + i** : Internet Menu
++ **W + c** : Colorpicker
++ **Super** : App Launcher
++ **C + A + l** : Lockscreen `i3lcok`
++ **C + A + v** : CLI editor `vim`
++ **C + A + r** : CLI File Manager `ranger`
++ **C + A + h** : System Monitor `htop`
