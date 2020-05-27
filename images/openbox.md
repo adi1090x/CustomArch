@@ -120,7 +120,7 @@ Tiling 3|Tiling 4
 + **W + i** : Internet Menu
 + **W + c** : Colorpicker
 + **Super** : App Launcher
-+ **C + A + l** : Lockscreen `i3lcok`
++ **C + A + l** : Lockscreen `betterlockscreen`
 + **C + A + v** : CLI editor `vim`
 + **C + A + r** : CLI File Manager `ranger`
 + **C + A + h** : System Monitor `htop`
