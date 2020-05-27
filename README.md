@@ -24,9 +24,10 @@ Second version of my custom ISO based on [Arch Linux](https://www.archlinux.org)
 + Grub - With `Vimix theme` - Configured
 + Plymouth - `Miniloop Theme` - Configured
 + Xorg Server / GUI - `Intel Video Drivers`
-+ Lightdm Display Manager - With `lightdm-gtk-greeter`
-+ Openbox Window Manager - Fully Configured
-+ Global `Dark` & `Light` Modes
++ Lxdm Display Manager - With `Custom themes`
++ **Openbox** & **Bspwm** Window Managers - Fully Configured
++ Global `Dark` & `Light` Modes in `Openbox`
++ Xresources based theming in `Bspwm`
 + Custom `Gtk` And `Icon` Themes
 + Network Manager - With `networkmanager_dmenu`
 + File Manager - `Thunar` with full Functionality (Partition Mounting, Network Access, Thumbnails Etc)
@@ -79,9 +80,9 @@ sudo su
 
 ## Boot The ISO
 
-**1. Using GRUB -** If you're already using a linux distro, with grub, then you can add following entry in your `grub.cfg` file, Replace **X** with your partition number, and `path_to_your_iso` with ISO path, which can be *(/home/USERNAME/archlinux/iso/out/archlinux-xxxx.xx.xx-x86_64.iso)* <br />
+**1. Using GRUB -** If you're already using a linux distro, with grub, then you can add following entry in your `grub.cfg` file, Replace **X** with your partition number, and `path_to_your_iso` with ISO path, which can be *(/home/USERNAME/archlinux/iso/out/CustomArch-xxxx.xx.xx-x86_64.iso)* <br />
 ```
-menuentry 'Arch Linux Live' --class arch --class gnu-linux --class linux {
+menuentry 'Custom Arch Linux Live' --class arch --class gnu-linux --class linux {
     set root='(hd0,X)'
     set isofile="path_to_your_iso"
     set dri="free"
@@ -108,39 +109,75 @@ dd bs=4M if=path_to_iso of=/dev/sdX status=progress oflag=sync
 
 ## What's New
 
-+ New Look and Style
++ ***New Look and Style***
+
+`Openbox`
 
 Desktop|Modes
 :--:|:--:
 ![img](images/desktop/9.png)|![img](images/modes.gif)
 
-+ Rofi based custom applets
+`Bspwm`
+
+Desktop|Styles
+:--:|:--:
+![img](images/bspwm/3.png)|![img](images/bspwm/12.gif)
+
++ ***Rofi based custom applets & Menus***
+
+`Openbox`
 
 |Network|MPD|System|Internet|Screenshot|
 |--|--|--|--|--|
 |![img](images/rofi_1.png)|![img](images/rofi_4.png)|![img](images/rofi_3.png)|![img](images/rofi_5.png)|![img](images/rofi_2.png)|
 
-+ Rofi based custom dialogs
+`Bspwm`
+
+|Launcher|Windows|Network|As Root|Themes|
+|--|--|--|--|--|
+|![img](images/bspwm/rofi_1.png)|![img](images/bspwm/rofi_2.png)|![img](images/bspwm/rofi_3.png)|![img](images/bspwm/rofi_4.png)|![img](images/bspwm/rofi_5.png)|
+
+|MPD|Power Menu|Internet|Screenshot|
+|--|--|--|--|
+|![img](images/bspwm/rofi_6.png)|![img](images/bspwm/rofi_7.png)|![img](images/bspwm/rofi_8.png)|![img](images/bspwm/rofi_9.png)|
+
++ ***Rofi based custom dialogs***
+
+`Openbox`
 
 |Password|Message|Confirmation|
 |--|--|--|
 |![img](images/dialog_1.png)|![img](images/dialog_2.png)|![img](images/dialog_3.png)|
 
-+ Improved Notifications, With Icons
+`Bspwm`
+
+|Password|Message|Confirmation|
+|--|--|--|
+|![img](images/bspwm/dialog_1.png)|![img](images/bspwm/dialog_2.png)|![img](images/bspwm/dialog_3.png)|
+
++ ***Improved Notifications, With Icons***
+
+`Openbox`
 
 |Volume Up|Volume Down|Backlight Up|Backlight Down|Colors|Album Art|
 |--|--|--|--|--|--|
 |![img](images/dunst_1.png)|![img](images/dunst_2.png)|![img](images/dunst_3.png)|![img](images/dunst_4.png)|![img](images/dunst_5.png)|![img](images/dunst_6.png)|
 
-+ New Themes And Styles
+`Bspwm`
+
+|Volume Up|Volume Down|Backlight Up|Backlight Down|Album Art|
+|--|--|--|--|--|
+|![img](images/bspwm/dunst_1.png)|![img](images/bspwm/dunst_2.png)|![img](images/bspwm/dunst_3.png)|![img](images/bspwm/dunst_4.png)|![img](images/bspwm/dunst_5.png)|
+
++ ***New Themes And Styles***
 
 Grub|Plymouth
 :--:|:--:
 ![img](images/grub.jpg)|![img](images/plymouth.gif)
 
-Lightdm|i3lock
+Lxdm|Better Lockscreen
 :--:|:--:
-![img](images/lightdm.png)|![img](images/i3lock.gif)
+![img](images/lxdm.png)|![img](images/betterlock.png)
 
 ## Installation
 
@@ -150,125 +187,11 @@ The installer is very simple and easy to use, but what if you're still a *window
 <br />
 
 ## Tour
-<details><summary>Desktop Session</summary>
 
-Desktop|Openbox Menu
+Openbox|Bspwm
 :--:|:--:
-![img](images/desktop/1.png)|![img](images/desktop/2.png)
-
-Launcher|Termite
-:--:|:--:
-![img](images/desktop/3.png)|![img](images/desktop/4.png)
-
-Thunar|Geany
-:--:|:--:
-![img](images/desktop/5.png)|![img](images/desktop/6.png)
-
-Midori|Apps
-:--:|:--:
-![img](images/desktop/7.png)|![img](images/desktop/11.png)
-
-Busy Desktop |Messy Desktop
-:--:|:--:
-![img](images/desktop/8.png)|![img](images/desktop/10.png)
-</details>
-
-<details><summary>Modes</summary>
-
-|Default Dark|Default Light|Terminal|Terminal|
-|--|--|--|--|
-|![img](images/mode/1.png)|![img](images/mode/2.png)|![img](images/mode/3.png)|![img](images/mode/4.png)|
-
-|Launcher Dark|Launcher Light|Menu Dark|Menu Light|
-|--|--|--|--|
-|![img](images/mode/5.png)|![img](images/mode/6.png)|![img](images/mode/7.png)|![img](images/mode/8.png)|
-
-|Applets Dark|Applets Light|Dunst Dark|Dunst Light|
-|--|--|--|--|
-|![img](images/mode/9.png)|![img](images/mode/10.png)|![img](images/mode/11.png)|![img](images/mode/12.png)|
-
-</details>
-
-<details><summary>Tiling</summary>
-
-Tiling 1|Tiling 2
-:--:|:--:
-![img](images/tiling/1.png)|![img](images/tiling/2.png)
-
-Tiling 3|Tiling 4
-:--:|:--:
-![img](images/tiling/3.png)|![img](images/tiling/5.png)
-
-</details>
-
-## Keybinding
-
-<details><summary>Workspaces</summary>
-
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+1**|Go To Desktop 1|&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;|**W+2**|Go To Desktop 2|
-|**W+3**|Go To Desktop 3||**W+4**|Go To Desktop 4|
-|**W+S+1**|Send To Desktop 1||**W+S+2**|Send To Desktop 2|
-|**W+S+3**|Send To Desktop 3||**W+S+4**|Send To Desktop 4|
-|**W+S+Left**|Send To Desktop Left||**W+S+Right**|Send To Desktop Right|
-
-</details>
-
-<details><summary>Windows</summary>
-
-|Key|Action|&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;|Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+Tab**|Next Window (All Desktop)||**A+Tab**|Next Window (Current Desktop)|
-|**W+Left**|Move To Edge West||**W+Right**|Move To Edge Eest|
-|**W+Up**|Maximize Full||**W+Down**|Unmaximize 60x80|
-|**W+h**|Top Left||**W+j**|Bottom Left|
-|**W+k**|Top Right||**W+l**|Bottom Right|
-|**W+KP_1**|Bottom Left 50x50||**W+KP_7**|Top Left 50x50|
-|**W+KP_3**|Bottom Right 50x50||**W+KP_9**|Top Right 50x50|
-|**W+KP_2**|Bottom 100x50||**W+KP_8**|Top 100x50|
-|**W+KP_4**|Left 50x100||**W+KP_6**|Right 50x100|
-|**W+A+Up**|Move Up||**W+A+Down**|Move Down|
-|**W+A+Left**|Move Left||**W+A+Right**|Move Right|
-|**C+A+Up**|Resize to Up||**C+A+Down**|Resize to Down|
-|**C+A+Left**|Resize to Left||**C+A+Right**|Resize to Right|
-|**A+r**|Toggle Resize||**A+m**|Toggle Move|
-|**A+F4**|Close Window||**A+F5**|Minimize Window|
-|**A+F6**|Maximize Window||**A+F7**|Toggle Decorations|
-
-</details>
-
-<details><summary>System</summary>
-
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**XF86AudioRaiseVolume**|Increase Volume||**XF86AudioLowerVolume**|Decrease Volume|
-|**XF86MonBrightnessUp**|Increase Brightness||**XF86MonBrightnessDown**|Decrease Brightness|
-|**Print**|Take a screenshot||**A+Print**|Take a screenshot in 5 Sec|
-|**C-S-Escape**|Exit WM||**C-S-BackSpace**|Restart Openbox|
-|**C-S-R**|Reconfigure Openbox||**W-Escape**|Kill App|
-|**W+d**|Show Desktop||**W+space**|Root Menu|
-
-</details>
-
-<details><summary>Applications</summary>
-
-|Key|Action||Key|Action|
-:--:|:--:|:--:|:--:|:--:
-|||||
-|**W+e**|Text Editor `geany`||**W+f**|File Manager `thunar`|
-|**W+t**|Terminal Emulator `termite`||**W+w**|Web Browser `midori`|
-|**W+n**|Network Menu||**W+m**|MPD Menu|
-|**W+x**|Power Menu||**W+r**|App Runner|
-|**W+s**|Screenshot Menu||**W+i**|Internet Menu|
-|**W+c**|Colorpicker||**W**|App Launcher|
-|**C+A+l**|Lockscreen `i3lcok`||**C+A+v**|CLI editor `vim`|
-|**C+A+r**|CLI File Manager `ranger`||**C+A+h**|System Monitor `htop`|
-
-</details>
+![img](images/desktop/1.png)|![img](images/bspwm/1.png)
+|[Keybindings & More ...](images/openbox.md)|[Keybindings & More ...](bspwm.md)|
 
 ### Support This Project
 <p align="left">
@@ -279,7 +202,7 @@ Tiling 3|Tiling 4
 
 ## Few Words
 
-+ I'm really bad at *Naming Things*, So Again... i've kept it simple - just ***Archlinux***. 
++ I'm really bad at *Naming Things*, So Again... i've kept it simple - just ***CustomArch***. 
 + Default `username` and `password` is ***liveuser*** (Live ISO Only).
 + After installing this ISO, run `sudo pacman -Syy` to fix pacman. it'll just download packages database.
 + In this ISO, I've enabled **encryption settings (luks/dm-crypt)** by default. If you're installing it without encryption, there will be no issue, but these settings are useless for you in this case. So after normal installation, comment out `GRUB_ENABLE_CRYPTODISK=y` in */etc/default/grub* and remove `plymouth-encrypt` hook in */etc/mkinitcpio.conf* and rebuilt initrd.
