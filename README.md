@@ -45,7 +45,7 @@ Second version of my custom ISO based on <a href="https://www.archlinux.org">Arc
 
 **1. Download -** You can either download already generated ISO file, or...
 <p align="center">
-  <a href="https://mega.nz/folder/O5QWAIaS#liqys5Up2JkFDi4Q4kX5JQ" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/MEGA-Download-red?style=for-the-badge&logo=mega"></a>
+  <a href="https://mega.nz/folder/6swHxAYS#v_Ymd5ZQ3EkS9RhuQVAaJQ" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/MEGA-Download-red?style=for-the-badge&logo=mega"></a>
 </p>
   
 **2. Build ISO -** If you're already using archlinux & want to build the iso, maybe with modified config then...
