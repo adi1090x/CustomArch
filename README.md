@@ -191,7 +191,7 @@ The installer is very simple and easy to use, but what if you're still a *window
 Openbox|Bspwm
 :--:|:--:
 ![img](images/desktop/1.png)|![img](images/bspwm/1.png)
-|[Keybindings & More ...](images/openbox.md)|[Keybindings & More ...](bspwm.md)|
+|[Keybindings & More ...](images/openbox.md)|[Keybindings & More ...](images/bspwm.md)|
 
 ### Support This Project
 <p align="left">
