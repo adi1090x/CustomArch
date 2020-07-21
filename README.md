@@ -19,6 +19,17 @@ Second version of my custom ISO based on <a href="https://www.archlinux.org">Arc
 
 ![gif](images/main.gif) <br />
 
+## Project Moved
+
+<a href="https://archcraft-os.github.io"><img align="right" src="https://raw.githubusercontent.com/archcraft-os/archcraft/master/iso/airootfs/usr/share/pixmaps/archcraft_circle.png" height="160" width="160" alt="Archcraft"></a>
+
+This project just got bigger. It now became a Linux Distribution.
+
+> A Minimalistic Linux Distribution, Focused On Aesthetics & Based On Arch Linux.
+
++ **Official Website** : [Visit Here](https://archcraft-os.github.io/)
++ **Project Page** : [Archcraft](https://github.com/archcraft-os/archcraft)
++ **Download** : [Sourceforge](https://sourceforge.net/projects/archcraft/files/latest/download)
 ## Features
 
 + Offline Installer - [Installation Guide Here](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
