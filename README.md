@@ -30,6 +30,9 @@ This project just got bigger. It now became a Linux Distribution.
 + **Official Website** : [Visit Here](https://archcraft-os.github.io/)
 + **Project Page** : [Archcraft](https://github.com/archcraft-os/archcraft)
 + **Download** : [Sourceforge](https://sourceforge.net/projects/archcraft/files/latest/download)
+
+##
+
 ## Features
 
 + Offline Installer - [Installation Guide Here](https://github.com/adi1090x/archlinux/blob/master/images/Installer/README.md)
