@@ -30,6 +30,9 @@ This project just got bigger. It now became a Linux Distribution.
 + **Official Website** : [Visit Here](https://archcraft-os.github.io/)
 + **Project Page** : [Archcraft](https://github.com/archcraft-os/archcraft)
 + **Download** : [Sourceforge](https://sourceforge.net/projects/archcraft/files/latest/download)
+
+##
+
 <details>
 <summary>Quick Links</summary>
     
