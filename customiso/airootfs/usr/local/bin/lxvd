@@ -1,3 +1,0 @@
-#!/bin/bash
-
-amixer -Mq set Master,0 5%- unmute && pkill dunst && lxdunst && notify-send -u low 'Volume Down ' $(volume)

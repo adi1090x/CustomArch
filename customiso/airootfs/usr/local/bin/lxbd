@@ -1,3 +1,0 @@
-#!/bin/bash
-
-xbacklight -dec 10 && pkill dunst && lxdunst && notify-send -u low 'Brightness Dec' $(blight)
