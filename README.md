@@ -1,6 +1,6 @@
 ## Project Moved
 
-<a href="https://archcraft-os.github.io"><img align="right" src="https://raw.githubusercontent.com/archcraft-os/archcraft/master/iso/airootfs/usr/share/pixmaps/archcraft_circle.png" height="160" width="160" alt="Archcraft"></a>
+<a href="https://archcraft-os.github.io"><img align="right" src="https://raw.githubusercontent.com/archcraft-os/archcraft-pkgs/master/archcraft/ac-pixmaps/src/icons/archcraft_circle.png" height="160" width="160" alt="Archcraft"></a>
 
 This project just got bigger. It now became a Linux Distribution.
 
