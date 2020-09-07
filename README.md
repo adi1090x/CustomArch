@@ -4,7 +4,7 @@
 
 This project just got bigger. It now became a Linux Distribution.
 
-> **Archcraft** : Yet another custom linux distribution, completely dependent on Arch Linux.
+> **Archcraft** : Yet another minimal linux distribution, based on Arch Linux.
 
 + **Official Website** : [Visit Here](https://archcraft-os.github.io/)
 + **Project Page** : [Archcraft](https://github.com/archcraft-os/archcraft)
