@@ -1,6 +1,8 @@
-## Project Moved
+<p align="center">
+<a href="https://archcraft.io"><img src="https://raw.githubusercontent.com/archcraft-os/archcraft-packages/main/archcraft-artworks/files/logo/png/logo-circle/logo-circle-1.png" height="200" width="200" alt="Archcraft"></a>
+</p>
 
-<a href="https://archcraft-os.github.io"><img align="right" src="https://archcraft.io"><img src="https://raw.githubusercontent.com/archcraft-os/archcraft-packages/main/archcraft-artworks/files/logo/png/logo-circle/logo-circle-1.png" height="160" width="160" alt="Archcraft"></a>
+## Project Moved
 
 This project is now a Linux Distribution.
 
